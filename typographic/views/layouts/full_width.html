@@ -1,0 +1,182 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Email Template - Typographic</title>
+<style type="text/css">
+body { font-size: 12px; margin: 0; padding: 0; font-family: Georgia, Times New Roman, Times, serif; }
+.pagename h1 { font-family: Arial, Helvetica, sans-serif; font-size: 42px; margin: 0; padding: 0; color: #fff !important; }
+h1 { font-family: Arial, Helvetica, sans-serif; font-size: 42px; margin: 0; padding: 0; color: #fff; }
+h2 { color: #333333 !important; font-size: 21px; font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; text-shadow: 1px 1px 1px #fff; }
+h3 { color: #333333 !important; font-size: 21px; font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; }
+.content p { font-size: 14px; color: #333333; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+.content a { color: #cc0000 !important; text-decoration: underline !important; }
+.content a:hover { color: #cc0000 !important; text-decoration: underline !important; }
+.options p { font-size: 12px; color: #666; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+.footer p { font-size: 12px; color: #333; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; text-transform: uppercase; }
+</style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #e5e5e5;" marginheight="0" topmargin="0" marginwidth="0" leftmargin="0">
+<!--100% body table-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td bgcolor="#d8e7ea" style="background-color: #e5e5e5;">
+            <!--intro-->
+            <table width="620" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="middle" width="11" height="100"></td>
+                    <td valign="middle" height="100">
+                        <!--break-->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="25"></td>
+                            </tr>
+                        </table>
+                        <!--/break-->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="59%" height="100">
+                                    <table width="280" border="0" cellspacing="0" cellpadding="20">
+                                        <tr>
+                                            <td class="pagename" bgcolor="#333333">
+                                                <h1>
+                                                    <singleline label="Title">Typographic</singleline>
+                                                </h1>
+                                                <p style="text-transform: uppercase; font-size: 14px;  color: #fff; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;">
+                                                    <currentdayname /> <currentday /> {{ helper:date format="F" }} {{ helper:date format="Y" }}
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="41%" height="100" valign="top">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td valign="bottom" height="70">
+                                                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333; text-transform: uppercase; margin: 0; padding: 0;">Email not looking beautiful?<br />
+                                                    <a href="{{ url:webversion }}" style="text-decoration: none; color: #cc0000">View it in your browser</a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--break-->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="25"></td>
+                            </tr>
+                        </table>
+                        <!--/break-->
+                    </td>
+                </tr>
+            </table>
+            <!--/intro-->
+            
+            <table width="620" border="0" align="center" cellpadding="0" cellspacing="0">
+             <tr>
+               <td>
+               <repeater>
+            <!--content section-->
+            <table width="620" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td height="82" width="11" valign="middle"></td>
+                    <td height="82" bgcolor="#FFFFFF" valign="middle">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td valign="middle" height="37" bgcolor="#fef041">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td bgcolor="#ffffff" width="25" height="37"></td>
+                                            <td width="15" height="37"></td>
+                                            <td>
+                                                <h2>
+                                                    <singleline label="Title">Enter Title Here</singleline>
+                                                </h2>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top"></td>
+                    <td bgcolor="#FFFFFF" valign="top">
+                        <table class="content" width="560" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="top">
+                                    <multiline label="Description"><p>Enter description here</p></multiline>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td height="12"></td>
+                                        </tr>
+                                    </table>
+                                    <img style="margin: 0; padding: 0; display: block; border: solid 10px #000;" border="0" width="540" height="158" alt="img1" editable="true" label="Image" />
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td height="20"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--/content section-->
+            </repeater>
+               </td>
+             </tr>
+           </table>
+
+            <!--footer-->
+            <table class="options" width="620" border="0" align="center" cellpadding="20" cellspacing="0">
+                <tr>
+                    <td valign="top">
+                        <p><multiline label="Description">You received this email because at some point in the past you either bought one of our products, signed up to our mailing list, or drunk some of that ‘special’ tea we slipped you. If you’d like, you can</multiline> <a href="{{ url:unsubscribe }}" style="color: #cc0000; text-decoration: none;">unsubscribe</a></p>
+                    </td>
+                    <td valign="top">
+                        <!--button-->
+                        <table align="right" width="200" border="0" cellspacing="0" cellpadding="10">
+                            <tr>
+                                <td style="color: #ffffff; text-align: center;" height="28" bgcolor="#cc0000">
+                                    <a href="{{ url:forward }}" style="text-decoration: none; color: #FFF; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Share this email</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--/button-->
+                    </td>
+                </tr>
+            </table>
+            <table width="620" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="11"></td>
+                    <td bgcolor="#FFFFFF" align="center">
+                        <table class="footer" width="100%" border="0" cellspacing="0" cellpadding="20">
+                            <tr>
+                                <td valign="middle" align="center">
+                                    <multiline label="Description"><p>Company and the Company logo are registered trademarks of Company
+Company 123 Some Street, City, ST 99999. Ph +1 4 1477 89 745</p></multiline>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--footer-->
+            <!--break-->
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td height="25"></td>
+                </tr>
+            </table>
+            <!--/break-->
+        </td>
+    </tr>
+</table>
+<!--/100% body table-->
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <style type="text/css">
+
+      body
+      {
+        font-family: arial, sans-serif;
+        font-size: 14px;
+      }
+
+      p
+      {
+        font-family: arial, sans-serif;
+        color: #767b83;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6
+      {
+        font-weight: bold;
+        font-family: arial, sans-serif;
+        color: #005a87;
+        margin: 0;
+      }
+
+      a
+      {
+        font-family: arial, sans-serif;
+        color: #005a87;
+      }
+
+      /* Classes / IDs */
+
+      .promo-text
+      {
+        font-family: arial, sans-serif;
+        color: #005a87;
+        font-size: 16px;
+        text-align: left;
+        line-height: 22px;
+        width: 300px;
+      }
+
+      h1.title
+      {
+        font-weight: normal;
+        text-align: left;
+        font-family: arial, sans-serif;
+        font-size: 28px;
+        color: #005a87;
+      }
+
+    </style>
+
+  </meta>
+</head>
+
+<body>
+  <table style="text-align: left; width: 600px; margin-top:20px;" border="0" cellspacing="0" align="center" cellpadding="0">
+    <tbody>
+      <tr>
+        <td colspan="2" width="600"><h1 class="title"><singleline>Company Name</singleline></h1><br /></td>
+      </tr>
+      <tr>
+        <td colspan="2"><img editable="true" src="../../images/a52ef1d7183aaf8a680bfc88c85e1072.jpg" alt="" width="600" height="47" /></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><img editable="true" src="../../images/b5a9817928194a32ca4c917e63640d7a.jpg" alt="" width="261" height="198" /></td>
+        <td><img editable="true" src="../../images/90dbf6fc1e9a2963ba047aa7691dc3f4.jpg" alt="" width="339" height="89" /></td>
+      </tr>
+      <tr>
+        <td width="339" height="109" bgcolor="#D4DFE4"><table border="0" align="center" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td class="promo-text"><singleline label="Text">Main promo text here. Main promo text here. Main promo text here. Main promo text here. Main promo text here.</singleline></td>
+              </tr>
+            </tbody>
+        </table></td>
+      </tr>
+      <tr>
+        <td colspan="2" width="600"><table style="text-align: left; width: 600px;" border="0" cellspacing="0" cellpadding="0">
+
+          <tr>
+            <td height="25">&nbsp;</td>
+          </tr>
+
+            <repeater>
+
+              <layout label="Full Width">
+                <tbody>
+                  <tr>
+                    <td><singleline label="Label"><h3>Section header</h3></singleline></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <multiline label="Body"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec porta ante ac sem. Proin sed nunc in felis vehicula vestibulum. Nulla eget dui et augue auctor lobortis. Maecenas pulvinar. Quisque sit amet ligula. Quisque convallis, orci non porta ultrices, magna ligula dictum purus, sit amet dapibus justo lorem non erat. Proin consequat interdum nisl. Mauris eros velit, pulvinar vel, laoreet eu, porttitor in, nisi. Donec vel justo. Donec felis lorem, imperdiet blandit, congue at, dignissim non, felis. Fusce nec augue. Proin tempus sodales nisl. Donec lorem. Suspendisse ornare elit sed est. Quisque sed purus. Nunc elit orci, fringilla et, suscipit in, rutrum et, turpis. Donec consectetuer magna.</p></multiline></td>
+                  </tr>
+                  <tr>
+                    <td height="35" valign="middle"><hr /><br /></td>
+                  </tr>
+                </table>
+              </layout>
+
+            </repeater>
+
+            <table>
+              <tr>
+                <td style="text-align: center;">
+                  <singleline label="Footer Links">
+                    <a href="#">Follow Us on Twitter</a>| 
+                    <a href="#">Find Us on Facebook</a>| 
+                    <a href="{{ url:forward }}">Forward to a
+                    Friend</a>
+                  </singleline>
+                </td>
+              </tr>
+            </tbody>
+
+          </table></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

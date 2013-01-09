@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>
+		harboat-coat
+	</title>
+
+
+	<style type="text/css">
+	a:hover { text-decoration: none !important; }
+	ul a { text-decoration: none; color: #f9e9c1; }
+
+	.unsubscribe p {padding: 0; font-size: 12px; line-height: 16px; color: #666; margin: 0; }
+	.header h1 {font-weight: bold; padding: 0; font-size: 60px; line-height: 76px; color: #ffe3a9 !important; margin: 10px 0 0; }
+	.welcome p { font-weight: normal; padding: 0; font-size: 16px; line-height: 20px; color: #f9e9c1; margin: 6px 0 0;}
+	.content-item h2 {padding: 6px 10px; background: #9ebbb0; font-weight: bold; font-size: 14px; line-height: 16px; margin: 0; color: #fdfdfd !important;}
+	.content-item p { padding: 0; font-size: 13px; line-height: 16px; color: #2d817d; margin: 0 0 20px;}
+	.content-item a { font-size: 12px; text-decoration: underline; color: #000;}
+
+	.sidebar p {padding: 0; font-size: 13px; line-height: 16px; color: #4a6a86; margin: 0 0 14px; }
+	.sidebar a { font-size: 13px; font-weight: normal;  color: #4a6a86;}
+	.sidebar .address a { text-decoration: none;}
+	</style>
+</head>
+<body bgcolor="#e8e4ce" style="text-align: left; padding: 0; margin: 0; background: #e8e4ce url('images/bg_email.png');">
+	<table cellspacing="0" border="0" align="center" bgcolor="#e8e4ce" style="background: #e8e4ce url('images/bg_email.png');" width="100%" cellpadding="0">
+		<tr>
+			<td align="center" valign="top" style="font-family: Helvetica, Arial, sans-serif;">
+
+				<table cellspacing="0" border="0" cellpadding="0" width="600">
+					<tr>
+						<td align="left" style="padding: 0 0 16px; font-family: Helvetica, Arial, sans-serif;">
+
+							<table class="unsubscribe" cellspacing="0" border="0" align="left" cellpadding="0" width="600">
+								<tr>
+									<td align="center" style="padding: 12px 0; font-family: Helvetica, Arial, sans-serif;">
+										<p><singleline label="Title">You&#39;re receiving this newsletter because you signed up at yoursite.com or bought widgets from us.</singleline></p>
+										<p>Having trouble reading this email? <a href="{{ url:webversion }}" style="text-decoration: underline; color: #666;">View it in your browser</a>. Not interested anymore? <a href="{{ url:unsubscribe }}" style="text-decoration: underline; color: #666;">Unsubscribe</a>.</p>
+									</td>
+								</tr>
+							</table>  <!-- unsubscribe -->
+
+						</td>
+					</tr>
+					<tr>
+						<td align="left" style="padding: 0 0 20px; font-family: Helvetica, Arial, sans-serif;">
+							<table class="header" cellspacing="0" border="0" align="left" cellpadding="0" width="600">
+								<tr>
+									<td style="font-family: Helvetica, Arial, sans-serif;"><img src="images/bg_header_top.jpg" alt="divider" style="display: block;" /></td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif;">
+										<table cellspacing="0" border="0" align="left" bgcolor="#2d807c" style="background: #2d807c url(images/bg_header.png);" width="600">
+											<tr>
+												<td valign="top" bgcolor="#2d807c" style="padding: 10px; font-family: Helvetica, Arial, sans-serif; background: #2d807c url(images/bg_header.png);">
+													<h1><singleline label="Title">Enter Title Here</singleline></h1>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" bgcolor="#2d807c" style="padding: 10px; font-family: Helvetica, Arial, sans-serif; background: #2d807c url(images/bg_header.png);">
+													<table cellspacing="0" border="0" align="left" bgcolor="#2d807c" style="background: #2d807c url(images/bg_header.png);" cellpadding="0">
+														<tr>
+															<td valign="top" bgcolor="#2d807c" style="padding: 0 0 10px; font-family: Helvetica, Arial, sans-serif; background: #2d807c url(images/bg_header.png);" width="204">
+																<p style="padding: 0; font-size: 13px; line-height: 16px; color: #f9e9c1; margin: 0 0 10px;"><strong>In This Issue</strong></p>
+																<ul style="padding: 0; border-bottom: 1px solid #6ba5a2; margin: 0; list-style:none; list-style-position:outside;">
+																	<tableofcontents>
+																		<li style="font-size: 13px; line-height: 15px; color: #f9e9c1; list-style-type: none; border-top: 1px solid #6ba5a2; margin: 0; padding: 4px 0;"> 
+																			<repeatertitle />
+																		</li>
+																	</tableofcontents>
+																</ul>
+															</td>
+															<td bgcolor="#2d807c" style="font-family: Helvetica, Arial, sans-serif; background: #2d807c url(images/bg_header.png);" width="38">&nbsp;</td>
+															<td valign="top" bgcolor="#2d807c" style="font-family: Helvetica, Arial, sans-serif; background: #2d807c url(images/bg_header.png);" class="welcome">
+																<multiline label="Description"><p>Enter description here</p></multiline>
+															</td>
+														</tr>
+													</table>  
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>  <!-- header -->
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" style="padding: 0 0 10px; font-family: Helvetica, Arial, sans-serif;" class="sidebar">
+							<table cellspacing="0" border="0" align="left" cellpadding="0" width="600">
+								<tr>
+									<td valign="top" style="font-family: Helvetica, Arial, sans-serif;" width="364">
+										<table cellspacing="0" border="0" cellpadding="0">
+											<repeater>
+												<tr>
+													<td style="font-family: Helvetica, Arial, sans-serif; padding: 0 0 20px 0; ">                          
+														<table class="content-item" cellspacing="0" border="0" bgcolor="#fff" style="background: #fff; border: 1px solid #bddacb;" cellpadding="0" width="364">
+															<tr>
+																<td bgcolor="#fff" style="padding: 10px 10px 0; font-family: Helvetica, Arial, sans-serif; background: #fff;">
+																	<h2><singleline label="Title" repeatertitle="true">Enter Title Here</singleline></h2>
+																</td>
+															</tr>
+															<tr>
+																<td valign="top" bgcolor="#fff" style="padding: 10px; font-family: Helvetica, Arial, sans-serif; background: #fff;">
+																	<img width="344" style="padding: 0 0 10px;" editable="true" label="Image" />
+																	<multiline label="Description"><p>Enter description text here.</p></multiline>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</repeater>
+										</table>
+									</td>
+									
+									<td style="font-family: Helvetica, Arial, sans-serif;">&nbsp;</td>
+									<td valign="top" bgcolor="#fff" style="font-family: Helvetica, Arial, sans-serif; background: #fff; border-right: 1px solid #bddacb; border-left: 1px solid #bddacb;" width="214">
+										<table class="sidebar" cellspacing="0" border="0" cellpadding="0" width="214">
+											<tr>
+												<td height="10" style="font-family: Helvetica, Arial, sans-serif;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td bgcolor="#476580" style="font-family: Helvetica, Arial, sans-serif; padding: 5px 14px; border: 1px solid #476580; background: #476580;">
+													<h4 style="padding: 0; font-size: 13px; line-height: 14px; color: #fff; margin: 0;">CONTACT US</h4>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding: 20px 14px 30px; font-family: Helvetica, Arial, sans-serif;" class="address">
+													<multiline label="Description"><p>123 Some Street<br />City, State<br />99999<br />(147) 789 7745<br /><a href="http://www.abcwidgets.com/">www.abcwidgets.com</a><br /><a href="mailto:info@abcwidgets.com">info@abcwidgets.com</a></p></multiline>
+												</td>
+											</tr>
+											<tr>
+												<td bgcolor="#1b4a15" style="font-family: Helvetica, Arial, sans-serif; padding: 5px 14px; border: 1px solid #1b4a15; background: #1b4a15;">
+													<h4 style="padding: 0; font-size: 13px; line-height: 14px; color: #fff; margin: 0;">FORWARD</h4>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding: 20px 14px 30px; font-family: Helvetica, Arial, sans-serif;">
+													<p style="padding: 0; font-size: 13px; line-height: 16px; color: #4a6a86; margin: 0 0 10px;">Do you know someone who might be interested in receiving this monthly newsletter?</p>
+													<a href="{{ url:forward }}" style="font-size: 12px; font-weight: bold; text-decoration: underline; color: #1b4a15;">FORWARD</a>
+												</td>
+											</tr>
+											<tr>
+												<td bgcolor="#728c24" style="font-family: Helvetica, Arial, sans-serif; padding: 5px 14px; border: 1px solid #728c24; background: #728c24;">
+													<h4 style="padding: 0; font-size: 13px; line-height: 14px; color: #fff; margin: 0;">UNSUBSCRIBE</h4>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding: 20px 14px 30px; font-family: Helvetica, Arial, sans-serif;">
+													<p><singleline label="Title">You are receiving this newsletter because you signed up for the Enter Title Here Newsletter.</singleline></p>
+													<a href="{{ url:unsubscribe }}" style="font-size: 12px; font-weight: bold; text-decoration: underline; color: #728c24;">UNSUBSCRIBE</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>  
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

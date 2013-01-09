@@ -1,0 +1,213 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Email Template - Metalab Steph</title>
+<style type="text/css">
+h1 { font-family: Helvetica, Arial, sans-serif; font-size: 24px; margin: 0px; padding: 0px; text-shadow: 1px 1px 1px #FFFFFF; color: #244a67 !important; }
+h2 { font-family: Helvetica, Arial, sans-serif; font-size: 18px; margin-top: 0px; margin-bottom: 12px; padding: 0px; text-shadow: 1px 1px 1px #333333; color: #62b6ee !important; }
+p { font-family: Helvetica, Arial, sans-serif; font-size: 13px; margin-top: 0px; margin-bottom: 12px; padding: 0px; color: #e7eff6 }
+a { color:#6aacdf; text-decoration: underline; }
+.top p, .footer p { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #4484b5; margin: 0; padding: 0; }
+</style>
+<!--[if gte mso 9]>
+<style type="text/css">
+.body {background: #234865 url('images/body-bg.jpg');}	     
+.case {background: none;}
+</style>
+<![endif]-->
+</head>
+<body class="body" style="margin: 0; padding: 0; background-color: #234865; background-image: url(images/body-bg.jpg); background-repeat: repeat;" marginheight="0" topmargin="0" marginwidth="0" leftmargin="0">
+<!--100% body table-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td class="case" bgcolor="#234865" style="background-color: #234865; background-image: url(images/body-bg.jpg); background-repeat: repeat;">
+            <!--[if gte mso 9]>
+<td style="background: none;">
+<![endif]-->
+            <!--header text-->
+            <table style="background-image: url(images/header-lines.jpg); background-position: bottom; background-repeat: repeat-x;" bgcolor="#1d3952" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        <table class="top" width="578" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="top" align="center" height="60">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td height="10"></td>
+                                        </tr>
+                                    </table>
+                                    <multiline label="Description"><p>You are receiving this newsletter because you signed up for it</p></multiline>
+                                    <p>Having trouble reading this email?
+                                        <a href="{{ url:webversion }}" style="color:#6aacdf; text-decoration: underline;">View it in your browser.</a>
+                                        |
+                                        <a href="{{ url:unsubscribe }}" style="color:#6aacdf; text-decoration: underline;">Click here to unsubscribe.</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--/header text-->
+            <!--intro-->
+            <table width="578" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="top" height="20"></td>
+                </tr>
+                <tr>
+                    <td background="images/header-bg.jpg" bgcolor="#c6d2db" valign="top" height="79">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="22" width="65%"></td>
+                                <td height="20" width="35%"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="center" valign="bottom" width="7%">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td width="15"></td>
+                                                        <td width="10"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td valign="middle" width="93%">
+                                                <h1>
+                                                    <singleline label="Title">abc Widgets Corp</singleline>
+                                                </h1>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td valign="top">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td height="10"></td>
+                                        </tr>
+                                    </table>
+                                    
+                                    
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td>
+        <p style=" font-family:Helvetica, Arial, sans-serif; font-weight: bold; font-size: 12px; margin: 0px; padding: 0px; text-shadow: 1px 1px 1px #FFFFFF; color: #336791">
+                                        <currentdayname />
+                                        ,
+                                        {{ helper:date format="F" }}
+                                        <currentday />
+                                        ,
+                                        {{ helper:date format="Y" }}
+                                    </p>
+        </td>
+        <td width="25">
+        </td>
+    </tr>
+</table>
+                                    
+                                    
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" height="20"></td>
+                </tr>
+            </table>
+            <!--/intro-->
+            <!--content section-->
+            <table width="576" border="0" align="center" cellpadding="20" cellspacing="0">
+                <tr>
+                    <td valign="top" bgcolor="#1c3851" background="images/content-bg.jpg" style="border: solid 1px #193044; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; -khtml-border-radius: 8px;">
+                        <repeater>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td width="53%" valign="top">
+                                                    <img style="-moz-box-shadow: 2px 2px 4px #000; -webkit-box-shadow: 2px 2px 4px #000; box-shadow: 2px 2px 4px #000; margin: 0 15px 15px 0; padding: 0; display: block; float: left;" width="265" alt="img1" editable="true" label="Image" />
+                                                    <h2>
+                                                        <singleline label="Title">Enter title here</singleline>
+                                                    </h2>
+                                                    <multiline label="Description"><p>Enter description here</p></multiline>
+                                                    </td>
+                                            </tr>
+                                        </table>
+                                        <!--line-->
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td valign="middle" height="40"> <img src="images/line.jpg" width="533" height="11" /></td>
+                                            </tr>
+                                        </table>
+                                        <!--/line-->
+                                    </td>
+                                </tr>
+                            </table>
+                        </repeater>
+                    </td>
+                </tr>
+            </table>
+            <!--/content section-->
+            <!--content section-->
+            <table width="578" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        <table width="578" border="0" cellpadding="20" cellspacing="0">
+                            <tr>
+                                <td align="center">
+                                    <table width="200" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td><img style="margin: 0; padding: 0; display: block;" src="images/foward.png" width="29" height="24" alt="foward" /></td>
+                                            <td>
+                                                <a href="{{ url:forward }}" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 16px; margin: 0px; padding: 0px; text-shadow: 1px 1px 1px #000; color: #62b6ee">Forward to friend</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center">
+                                    <table width="200" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td><img style="margin: 0; padding: 0; display: block;" src="images/unsubscribe.png" width="29" height="26" alt="unsubscribe" /></td>
+                                            <td>
+                                                <a href="{{ url:unsubscribe }}" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; margin: 0px; padding: 0px; text-shadow: 1px 1px 1px #000; color: #62b6ee">Unsubscribe</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--/content section-->
+            <!--footer-->
+            <table style="background-image: url(images/footer-lines.jpg); background-position: top; background-repeat: repeat-x;" bgcolor="#1c293b" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        <table class="footer" width="578" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="top" align="center" height="60">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td height="15"></td>
+                                        </tr>
+                                    </table>
+                                    <multiline label="Description"><p>ABCWidgets Corp — 123 Some Street, City, ST 99999. Ph +1 4 1477 89 745</p></multiline>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--/footer-->
+        </td>
+    </tr>
+</table>
+<!--/100% body table-->
+</body>
+</html>

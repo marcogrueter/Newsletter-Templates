@@ -1,0 +1,644 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Seasons Greetings!</title>
+<style type="text/css">
+/* @media queries for mobile devices - test in browser using @media (max-width: 600px) { */
+@media only screen and (max-device-width: 480px) {
+table[class=w0], td[class=w0] {
+  width: 0 !important;
+}
+table[class=w30], td[class=w30], img[class=w30], td[class=w30] {
+  width:10px !important;
+}
+table[class=w170], td[class=w170] {
+  width:80px !important;
+}
+table[class=w220], td[class=w220], img[class=w220] {
+  width:80px !important;
+}
+table[class=w240], td[class=w240], img[class=w240] {
+  width:170px !important;
+}
+table[class=w265], td[class=w265], img[class=w265] {
+  width:125px !important;
+}
+table[class=w470], td[class=w470], img[class=w470] {
+  width:300px !important;
+}
+table[class=w560], td[class=w560] {
+  width:280px !important;
+}
+table[class=w648], td[class=w648] {
+  width:320px !important;
+}
+/* Resizing images to correct ratios */
+img[class=w170] {
+  width:80px !important;
+  height: 47% !important;
+}
+img[class=w560] {
+  width:280px !important;
+  height: 50% !important;
+}
+img[class=w648] {
+  width:320px !important;
+  height: 46% !important;
+}
+table[class=hide], td[class=hide], img[class=hide], p[class=hide], span[class=hide] {
+  display:none !important;
+}
+table[class=h0], td[class=h0] {
+  height: 0 !important;
+}
+td[id=header-left] {
+  padding: 0 0 20px 5px !important;
+}
+table[id=headerrow] {
+  height: 180px !important;
+  max-height: 180px !important;
+  min-height: 80px !important;
+}
+table[class=permission-reminder], table[class=unsub] {
+  width: 280px !important;
+  margin-bottom: 5px;
+}
+div[id=flakes] {
+  width: 300px;
+}
+}
+/* General Styling of the snowflakes */
+div#flakes {
+  position: absolute;
+  top: -50px;
+  z-index: 0;
+  height: 1px !important;
+}
+
+/* default animation and transform */
+   i {
+  display: inline-block;
+  border-radius: 50%;
+  opacity: 0;
+  height: 8px; width: 5px;
+  -webkit-transform-origin: left -20px;
+  -webkit-animation-name: falling;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-direction:normal;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-fill-mode: none;
+  -webkit-animation-play-state:running;
+  /* or */
+  -moz-animation: falling 3s linear 2s 20;
+}
+  
+/* animation used for ALL snowflakes */
+  @-webkit-keyframes falling {
+ 0% {
+ -webkit-transform: 
+ translate3d(0, 0, 0) rotate(0deg) scale(0.9, 0.9);
+ opacity: 1;
+ background-color: white;
+
+}
+ 100% {
+ -webkit-transform: 
+ translate3d(30px, 1000px, 0) rotate(360deg) scale(1.1, 1.1);
+ background-color: white;
+}
+}
+ @-moz-keyframes falling {
+ 0% {
+ -moz-transform: 
+ translate3d(0, 0, 0) rotate(0deg) scale(0.9, 0.9);
+}
+ 100% {
+ -moz-transform: 
+ translate(30px, 1000px) rotate(360deg) scale(1.1, 1.1);
+}
+}
+.topmost {
+  position: relative;
+  z-index: 200;
+}
+/* different sizes, and default origins based on size */
+.lg {
+  height:10px;
+  width:8px;
+  -webkit-transform-origin: right -30px;
+  -moz-transform-origin: right -30px;
+}
+.med {
+  height:7px;
+  width:6px;
+  -webkit-transform-origin: left -30px;
+  -moz-transform-origin: left -30px;
+}
+.sm {
+  height:4px;
+  width:3px;
+  -webkit-transform-origin: -30px 0;
+  -moz-transform-origin: -30px 0;
+}
+/* different speeds, with iteration counts to equal 3minutes approx. */
+  .slow {
+  -webkit-animation-duration: 5.3s;
+  -webkit-animation-iteration-count: infinite; /* 12 */
+  -webkit-transform-origin: -10px -20px;
+}
+.med {
+  -webkit-animation-duration: 3.1s;
+  -webkit-animation-iteration-count: infinite; /* 20 */
+  -webkit-transform-origin: 10px -20px;
+}
+.fast {
+  -webkit-animation-duration: 1.7s;
+  -webkit-animation-iteration-count: infinite; /* 35 */
+  -webkit-transform-origin: right -20px;
+}
+/* different delays so they don't all start at the same time */
+  .del1 {
+  -webkit-animation-delay: 2.3s;
+  -moz-animation-delay: 2.3s;
+}
+.del2 {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+}
+.del3 {
+  -webkit-animation-delay: 3.4s;
+  -moz-animation-delay: 3.4s;
+}
+/* playing with timing functions to make it a teeny bit more random like */
+  .lg.del2 {
+  -webkit-animation-timing-function:ease-in-out;
+}
+.lg.del1 {
+  -webkit-animation-timing-function:ease-out;
+}
+.avg.del3 {
+  -webkit-animation-timing-function:ease;
+}
+.lg.del2 {
+  -moz-animation-timing-function:ease-in-out;
+}
+.lg.del1 {
+  -moz-animation-timing-function:ease-out;
+}
+.avg.del3 {
+  -moz-animation-timing-function:ease;
+}
+/* playing with opacity to make it a teeny bit more random like */
+  .avg.del2 {
+  opacity: 0.5
+}
+.avg.del1 {
+  opacity: 0.3
+}
+.fast.del2 {
+  opacity: 0.7
+}
+.fast.del1 {
+  opacity: 0.6;
+  -webkit-animation-timing-function:ease-in;
+  -webkit-transform-origin: left 10px;
+  -moz-animation-timing-function:ease-in;
+  -moz-transform-origin: left 10px;
+}
+.slow {
+  opacity: 0.8
+}
+/* Template styles */
+/* Client-specific Styles */
+#outlook a {
+  padding: 0;
+} /* Force Outlook to provide a "view in browser" button. */
+.ReadMsgBody {
+  width: 100%;
+}
+.ExternalClass {
+  width: 100%;
+  display:block !important;
+} /* Force Hotmail to display emails at full width */
+html, body {
+  background-color: #e2ebee;
+  margin: 0;
+  padding: 0;
+}
+img {
+  outline: none;
+  text-decoration: none;
+  display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 100% !important;
+  -webkit-font-smoothing: antialiased;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #5fb7d0 !important;
+}
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+  color: #5fb7d0 !important;
+}
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+  color: #5fb7d0 !important;
+}
+table td, table tr {
+  border-collapse: collapse;
+}
+.yshortcuts, .yshortcuts a, .yshortcuts a, .yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span {
+  color: black;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background: none !important;
+} /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+/* Fonts and Content */
+body {
+  font-family: Helvetica Neue, Arial, Helvetica, Geneva, sans-serif;
+}
+.article-title {
+  font-size: 18px;
+  line-height:24px;
+  color: #5fb7d0;
+  font-weight:500;
+  margin-top:0px;
+  margin-bottom:18px;
+  font-family: Helvetica Neue, Arial, Helvetica, Geneva, sans-serif;
+}
+.article-title a {
+  color: #5fb7d0;
+  text-decoration: none;
+}
+.article-content {
+  font-size: 13px;
+  line-height: 18px;
+  color: #888888;
+  margin-top: 0px;
+  margin-bottom: 18px;
+  font-family: Helvetica Neue, Arial, Helvetica, Geneva, sans-serif;
+}
+.article-content a {
+  color: #5fb7d0;
+  font-weight:500;
+  text-decoration:none;
+}
+.article-content ol, .article-content ul {
+  margin-top:0px;
+  margin-bottom:18px;
+  margin-left:19px;
+  padding:0;
+}
+.article-content li {
+  font-size: 13px;
+  line-height: 18px;
+  color: #888888;
+}
+.article-content li a {
+  color: #5fb7d0;
+  text-decoration:underline;
+}
+.article-content p {
+  margin-bottom: 15px;
+  -webkit-font-smoothing: subpixel-antialiased !important; /* Readable emails are important. */
+}
+#headerrow { height: 245px; }
+#header-left {
+  padding: 0 0px 40px 40px;
+}
+#header-right {
+  padding: 0 40px 40px 0px;
+}
+#header-left img, #header-right img { max-height: 160px; }
+#footer, table.permission-reminder tr td, table.unsub tr td {
+  color: #87adb9;
+  font-size: 11px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+#footer a {
+  color: #87adb9;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.social, .social a {
+  color: #5fb7d0;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-decoration: none;
+  white-space:nowrap;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+.preheader { color:#e2ebee; opacity: 0; display: none; width:1px; height: 1px; font-size: 1px; } 
+</style>
+</head>
+<body>
+<!-- VML code to force background images in Outlook 2007 & 2010, see: http://www.campaignmonitor.com/blog/post/3363/updated-applying-a-background-image-to-html-email/ -->
+<!--[if gte mso 9]>
+<v:background fill="t">
+   <v:fill type="tile" src="http://www.campaignmonitor.com/templates/xmas-2011/images/xmas-bg-845.jpg" />
+</v:background>
+<![endif]-->
+
+<table width="845" border="0" align="center" cellpadding="0" cellspacing="0" class="w648">
+  <tr>
+    <td background="images/xmas-bg-845.jpg" style="background-image: url(images/xmas-bg-845.jpg);"><table width="845" border="0" cellpadding="0" cellspacing="0" class="w648">
+        <tr>
+          <td valign="top"><img src="images/header-left-20.jpg" width="20" height="245" class="hide" /></td>
+          <td width="648" class="w648"><table width="648" border="0" align="center" cellpadding="0" cellspacing="0" class="w648">
+              <tr>
+                <td width="648" class="w648" background="images/header-mid.jpg" style="background-image:url('images/header-mid.jpg');"><!--[if gte mso 9]>
+                <v:rect style="width:648px;height:245px;" strokecolor="none">
+                <v:fill type="frame" src="http://www.campaignmonitor.com/templates/xmas-2011/images/header-mid.jpg" /></v:fill>
+                </v:rect>
+                <v:shape id="theText" style="position:absolute;width:648px;height:245px;">
+                <![endif]-->
+                  
+                  <table width="648" id="headerrow" cellpadding="0" cellspacing="0" class="w648">
+                    <tr>
+                      <td>
+                      <!-- Preheader -->
+                      <span class="preheader">===== Wishing you a safe and merry holiday season! =====</span>
+                      <!-- CSS snowflakes -->
+                      <div id="flakes"> <i class="lg slow del2"></i> <i class="sm fast del1"></i> <i class="lg avg del3"></i> <i class="med slow del1"></i> <i class="lg slow del3"></i> <i class="sm avg del1"></i> <i class="med avg del2"></i> <i class="lg avg del1"></i> <i class="sm slow del1"></i> <i class="med fast del2"></i> <i class="med slow del3"></i> <i class="slow del2"></i> <i class="sm avg del2"></i> <i class="sm avg del3"></i> <i class="lg avg del1"></i> <i class="lg fast del2"></i> <i class=" slow del3"></i> <i class="med avg del1"></i> <i class="lg avg"></i> <i class="sm fast del3"></i> <i class="lg slow del1"></i> <i class="sm fast del2"></i> <i class="med  del3"></i> <i class="med slow"></i> <i class="sm slow del2"></i> <i class="lg avg del3"></i> <i class="lg fast del1"></i> <i class="sm slow del1"></i> <i class="avg del3"></i> <i class="med slow del3"></i> <i class="lg avg del2"></i> <i class="sm slow del2"></i> <i class="sm fast del3"></i> <i class="fast del1"></i> <i class="lg slow del2"></i> <i class="med avg del3"></i> <i class="med del1"></i> <i class="lg  del2"></i> <i class="sm slow del3"></i> <i class="lg avg del1"></i></div></td>
+                      <td width="240" class="hide"><table width="226" border="0" cellspacing="0" cellpadding="0" class="hide social">
+                          <tr>
+                            <td width="86" height="8"></td>
+                            <td width="55" height="8"></td>
+                            <td width="85" height="8"></td>
+                          </tr>
+                          <tr>
+                            <td><a href="{{ url:webversion }}">View online</a></td>
+                            <td><img src="images/like-glyph_3.png" border="0" width="8" height="13" align="left" />&nbsp;&nbsp;
+                              <fblike>Like</fblike></td>
+                            <td><img src="images/tweet-glyph_4.png" border="0" width="17" height="13" align="left" />&nbsp;&nbsp;
+                              <tweet>Tweet</tweet></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="406" rowspan="2" valign="bottom" class="w648" id="header-left"><img src="images/hello-seasons-greetings.gif" alt="Hello and Seasons Greetings" width="300" height="160" editable="true" label="Greeting (300x160px max transparent gif)" /></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="right" valign="bottom" class="hide" id="header-right"><img src="images/logo.gif" alt="Your Company" width="200" height="160" editable="true" label="Logo (200x160px max transparent gif)" /></td>
+                    </tr>
+                  </table>
+                  
+               <!--[if gte mso 9]>
+               </v:shape>
+               <![endif]--></td>
+              </tr>
+              <tr>
+                <td height="8" bgcolor="#5fb7d0" background="images/header-stripe.gif" style="background-image:url(images/header-stripe.gif);"></td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFFFFF" height="30">&nbsp;</td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFFFFF" class="topmost"><repeater>
+                    <layout label="Text only">
+                      <table width="560" class="w560" cellpadding="0" cellspacing="0" border="0" align="center">
+                        <tbody>
+                          <tr>
+                            <td><p align="left" class="article-title">
+                                <singleline label="Title">Add a title</singleline>
+                              </p>
+                              <div align="left" class="article-content">
+                                <multiline label="Description">Enter your description <a href="#">Sample link</a></multiline>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <td height="10"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                    <layout label="Text with full-width image">
+                      <table width="560" border="0" align="center" cellpadding="0" cellspacing="0" class="w560">
+                        <tbody>
+                          <tr>
+                            <td class="w560" width="560"><p align="left" class="article-title">
+                                <singleline label="Title">Add a title</singleline>
+                              </p></td>
+                          </tr>
+                          <tr>
+                            <td class="w560" width="560"><img editable="true" src="images/560x315.gif" label="560px image" class="w560" width="560" border="0" /></td>
+                          </tr>
+                          <tr>
+                            <td class="w560" width="560" height="15"></td>
+                          </tr>
+                          <tr>
+                            <td class="w560" width="560"><div align="left" class="article-content">
+                                <multiline label="Description">Enter your description</multiline>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <td class="w560" width="560" height="10"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                    <layout label="Text with right-aligned image">
+                      <table width="560" border="0" align="center" cellpadding="0" cellspacing="0" class="w560">
+                        <tbody>
+                          <tr>
+                            <td class="w560" width="560"><p align="left" class="article-title">
+                                <singleline label="Title">Add a title</singleline>
+                              </p>
+                              <table cellpadding="0" cellspacing="0" border="0" align="right">
+                                <tbody>
+                                  <tr>
+                                    <td class="w30" width="15"></td>
+                                    <td><img editable="true" src="images/240x135.gif" label="240px image" class="w240" width="240" border="0" /></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="w30" width="15" height="5"></td>
+                                    <td></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <div align="left" class="article-content">
+                                <multiline label="Description">Enter your description</multiline>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <td class="w560" width="560" height="10"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                    <layout label="Text with left-aligned image">
+                      <table width="560" border="0" align="center" cellpadding="0" cellspacing="0" class="w560">
+                        <tbody>
+                          <tr>
+                            <td class="w560" width="560"><p align="left" class="article-title">
+                                <singleline label="Title">Add a title</singleline>
+                              </p>
+                              <table cellpadding="0" cellspacing="0" border="0" align="left">
+                                <tbody>
+                                  <tr>
+                                    <td><img editable="true" src="images/240x135.gif" label="240px image" class="w240" width="240" border="0" /></td>
+                                    <td class="w30" width="15"></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td class="w30" width="15" height="5"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <div align="left" class="article-content">
+                                <multiline label="Description">Enter your description</multiline>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <td class="w560" width="560" height="10"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                    <layout label="Two columns">
+                      <table width="560" border="0" align="center" cellpadding="0" cellspacing="0" class="w560">
+                        <tbody>
+                          <tr>
+                            <td class="w265" width="265" valign="top"><table class="w265" width="265" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                  <tr>
+                                    <td class="w265" width="265"><p align="left" class="article-title">
+                                        <singleline label="Title">Add a title</singleline>
+                                      </p>
+                                      <div align="left" class="article-content">
+                                        <multiline label="Description">Enter your description</multiline>
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="w265" width="265" height="10"></td>
+                                  </tr>
+                                </tbody>
+                              </table></td>
+                            <td class="w30" width="30"></td>
+                            <td class="w265" width="265" valign="top"><table class="w265" width="265" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                  <tr>
+                                    <td class="w265" width="265"><p align="left" class="article-title">
+                                        <singleline label="Title">Add a title</singleline>
+                                      </p>
+                                      <div align="left" class="article-content">
+                                        <multiline label="Description">Enter your description</multiline>
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="w265" width="265" height="10"></td>
+                                  </tr>
+                                </tbody>
+                              </table></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                    <layout label="Image gallery">
+                      <table width="560" border="0" align="center" cellpadding="0" cellspacing="0" class="w560">
+                        <tbody>
+                          <tr>
+                            <td class="w170" width="170" valign="top"><table class="w170" width="170" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                  <tr>
+                                    <td class="w170" width="170"><img editable="true" src="images/170x95.gif" label="170px image" class="w170" width="170" border="0" /></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="w170" width="170" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="w170" width="170"><div align="left" class="article-content">
+                                        <multiline label="Description">Enter your description</multiline>
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="w170" width="170" height="10"></td>
+                                  </tr>
+                                </tbody>
+                              </table></td>
+                            <td width="25"></td>
+                            <td class="w170" width="170" valign="top"><table class="w170" width="170" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                  <tr>
+                                    <td class="w170" width="170"><img editable="true" src="images/170x95.gif" label="170px image" class="w170" width="170" border="0" /></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="w170" width="170" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="w170" width="170"><div align="left" class="article-content">
+                                        <multiline label="Description">Enter your description</multiline>
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="w170" width="170" height="10"></td>
+                                  </tr>
+                                </tbody>
+                              </table></td>
+                            <td width="25"></td>
+                            <td class="w170" width="170" valign="top"><table class="w170" width="170" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                  <tr>
+                                    <td class="w170" width="170"><img editable="true" src="images/170x95.gif" label="170px image" class="w170" width="170" border="0" /></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="w170" width="170" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="w170" width="170"><div align="left" class="article-content">
+                                        <multiline label="Description">Enter your description</multiline>
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="w170" width="170" height="10"></td>
+                                  </tr>
+                                </tbody>
+                              </table></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                  </repeater></td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td><img src="images/footer.jpg" width="648" height="100" alt="See you in the new year!" class="w648" /></td>
+              </tr>
+              <tr>
+                <td height="20">&nbsp;</td>
+              </tr>
+              <tr>
+                <td valign="top"><table width="560" border="0" align="center" cellpadding="0" cellspacing="0" id="footer" class="w560">
+                    <tr>
+                      <td valign="top"><table width="410" border="0" align="left" cellspacing="0" class="permission-reminder">
+                          <tr>
+                            <td valign="top"><multiline label="Permission reminder">You were emailed because you signed up for our newsletter on our site. </multiline>
+                              <a href="{{ url:unsubscribe }}" style="font-weight: 500; text-decoration: underline;">Unsubscribe&nbsp;instantly</a>.
+                              <multiline label="Address">We are <a href="#">ABC Widgets</a>, 123 Fake Street, Springfield,&nbsp;90210&nbsp;CA</multiline></td>
+                          </tr>
+                        </table>
+                        <table width="140" cellspacing="0" cellpadding="0" class="unsub">
+                          <tr>
+                            <td valign="top"><multiline label="Forward links etc">You can add additional links here.</multiline></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table>
+                  <p>&nbsp;</p></td>
+              </tr>
+            </table></td>
+          <td valign="top"><img src="images/header-right.jpg" width="177" height="245" class="hide" /></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

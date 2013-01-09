@@ -1,0 +1,236 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Email Template - retro stripes</title>
+
+<style>
+h1 {font-family: Georgia, 'Times New Roman', Times, serif; font-size: 48px; color: #FFF !important; margin:0px; padding:0px;}
+h2 {color: #796016 !important; font-size: 16px; font-family: Georgia, Times New Roman, Times, serif; margin-bottom: 20px; padding: 0px; font-weight: bold;}
+.header p{font-size: 12px; font-family: Georgia, 'Times New Roman', Times, serif; margin: 0px; padding: 0px; color: #333;}
+.intro-text p{font-size: 16px; font-family: Georgia, Times New Roman, Times, serif; margin: 0px; padding: 0px; color: #333; font-style: italic;}
+.content p, footer p{font-size: 12px; font-family: Georgia, Times New Roman, Times, serif; margin-bottom: 10px; padding: 0px; color: #333;}
+.content ul, .content ol, .options ul, .options ol{margin:0 0 0 30px; padding:0;}
+.content ul li, .content ol li, .options ul li, .options ol li{font-size: 12px; font-family: Georgia, Times New Roman, Times, serif; margin-bottom: 10px; padding: 0px; color: #333;}
+a { color: #194750 !important; text-decoration: underline !important; }
+a:hover { color: #194750 !important; text-decoration: underline !important; }
+.issue a { color: #194750 !important; text-decoration: none !important; }
+.issue a:hover { color: #194750 !important; text-decoration: none !important; }
+.options p{font-size: 12px; font-family: Georgia, Times New Roman, Times, serif; margin-bottom: 10px; padding: 0px; color: #333;}
+.options h2{font-size: 16px; font-family: Georgia, 'Times New Roman', Times, serif; margin-bottom: 10px; padding: 0px; color: #796016; font-weight: bold; font-style:italic;}
+.button a{color: #fff !important; text-decoration: none !important;}
+.button a:hover{color: #fff !important; text-decoration: none !important;}
+</style>
+
+</head>
+
+<body style="margin: 0; background-color: #e2c5a2; background-image: url(images/body-bg.jpg); background-repeat: repeat;" marginheight="0" topmargin="0" marginwidth="0" leftmargin="0">
+<!--100% body table-->
+<table style="background-color: #e2c5a2; background-image: url(images/body-bg.jpg); background-repeat: repeat;" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><!--header text-->
+      
+      <table class="header" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="middle" align="center" height="80" bgcolor="#f6eadd"><table width="620" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>
+                	<multiline label="Description"><p>You are receiving this newsletter because you signed up for the ABC Widget Newsletter.</p></multiline>
+                    <p>
+                    Having trouble reading this email?
+                    <a href="{{ url:webversion }}" style="color: #194750; text-decoration: underline;">View it in your browser.</a>
+                    Not interested anymore?
+                    <a href="{{ url:unsubscribe }}" style="color: #194750; text-decoration: underline;">Unsubscribe Instantly.</a>
+                  </p></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+      <!--/header text--> 
+      <!--masthead-->
+
+      <table style="background-image:url(images/brown.jpg); background-repeat:repeat; background-color:#39332a;" height="177" background="images/brown.jpg" bgcolor="#39332a" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr><td>      
+      
+      <table id="masthead" style="background-image:url(images/masthead-bg.jpg); background-repeat:repeat; background-color:#39332a;" background="images/masthead-bg.jpg" bgcolor="#39332a" width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top" height="177"><table border="0" align="left" cellpadding="0" cellspacing="0">
+              <tr>
+                <td valign="top" width="197" height="177"><img style="margin: 0px; padding: 0px; float:left;" src="images/masthead-stripes.jpg" width="197" height="177" /></td>
+              </tr>
+            </table>
+            <table background="images/masthead-date-bg.jpg" bgcolor="#FFFFFF" style="margin:0px; padding:0px; display:block; background-image:url(images/masthead-date-bg.jpg); background-repeat: no-repeat; background-position: top; background-color: #FFF; overflow: hidden;" width="181" border="0" align="left" cellpadding="0" cellspacing="0">
+              <tr>
+                <td valign="top" width="181" height="177"><table width="181" border="0" align="left" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td height="60">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td valign="top" align="center"><p style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif; margin: 0px; padding: 0px; color: #333;">
+                          {{ helper:date format="F" }}
+                        </p>
+                        <p style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif; margin: 0px; padding: 0px; color: #333;">Newsletter</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top">&nbsp;</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+            <table width="575" border="0" align="right" cellpadding="0" cellspacing="0">
+              <tr>
+                <td valign="top" width="445" height="55">&nbsp;</td>
+                <td valign="top" width="445" height="55">&nbsp;</td>
+              </tr>
+              <tr>
+                <td valign="top"><h1>
+                    <singleline label="Title">Enter Title here</singleline>
+                  </h1></td>
+                <td valign="top">&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+     
+      </td></tr></table>
+      <!--/masthead--> 
+            
+      <table width="605" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="25">&nbsp;</td>
+        </tr>
+      </table>
+      <table width="605" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top" width="225">
+          
+            
+            <!--section-->
+            <repeater>
+            <table class="content" style="background-image: url(images/intro-bg.jpg); background-repeat: repeat;" background="images/intro-bg.jpg" width="100%" border="0" cellspacing="0" cellpadding="20">
+              <tr>
+                <td valign="top"><h2>
+                    <singleline label="Title" repeatertitle="true">Enter title here</singleline>
+                  </h2>
+
+                  <img style="margin: 0px 0 20px 0; padding: 0px; display: block; border:solid 6px #f2ebe1;" width="328" height="242" editable="true" label="Image" />
+
+                  <multiline label="Description"><p>Enter description here</p></multiline></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="25">&nbsp;</td>
+              </tr>
+            </table>
+            </repeater>
+            <!--section--> 
+          </td>
+          <td width="380" valign="top"><table width="205" border="0" align="right" cellpadding="0" cellspacing="0">
+              <tr>
+                <td valign="top" width="220"><p style="color: #796016; font-family: Georgia, 'Times New Roman', Times, serif; margin: 0px; padding: 0px; font-weight: bold;">IN THIS ISSUE</p>
+                  <br />
+                  
+                  <table class="issue" width="100%" border="0" cellspacing="0" cellpadding="0">
+                  	<tableofcontents>
+                    <tr>
+                      <td><p style="font-size: 13px; font-family: Georgia, 'Times New Roman', Times, serif; margin: 0px; padding: 0px; color: #194750; float: left;">
+                          <repeatertitle />
+                        </p></td>
+                    </tr>
+                    <tr>
+                      <td><img style="margin: 0px; padding: 0px; display: block; float:left;" src="images/line.gif" height="17" width="186" /></td>
+                    </tr>
+                    </tableofcontents>
+                  </table>
+                  
+                  
+                  <table class="options" width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td valign="top"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td height="20"></td>
+                          </tr>
+                        </table>
+                        <h2>Forward this issue</h2>
+                        <multiline label="Description"><p>Do you know someone who might be interested in receiving this monthly newsletter?</p></multiline>
+                        
+                        <!--button-->
+                        
+                        <table class="button" width="160" border="0" cellspacing="0" cellpadding="10">
+                          <tr>
+                            <td style="border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; -khtml-border-radius: 6px; font-size: 12px; font-family: Georgia, 'Times New Roman', Times, serif; color: #ffffff; margin: 0; padding: 0; text-align: center;" height="28" bgcolor="#c3b398"><a href="{{ url:forward }}" style="text-decoration: none; color: #fff;">Forward</a></td>
+                          </tr>
+                        </table>
+                        <!--/button-->
+                        
+                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td height="20"></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><h2>Unsubscribe</h2>
+                        <multiline label="Description"><p>Not interested anymore?</p></multiline>
+                        
+                        <!--button-->
+                        
+                        <table width="160" border="0" cellspacing="0" cellpadding="10">
+                          <tr>
+                            <td class="button" style="border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; -khtml-border-radius: 6px; font-size: 12px; font-family: Georgia, 'Times New Roman', Times, serif; color: #ffffff; margin: 0; padding: 0; text-align: center;" height="28" bgcolor="#c3b398"><a href="{{ url:unsubscribe }}" style="text-decoration: none; color: #fff;">Unsubscribe</a></td>
+                          </tr>
+                        </table>
+                        <!--/button-->
+                        
+                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td height="20"></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><h2>Contact us</h2>
+                        <multiline label="Description"><p>123 Some Street<br />
+City, State<br />
+99999<br />
+(147) 789 7745<br />
+<a style="color: #194750; text-decoration: underline;" href="#">www.abcwidgets.com</a><br />
+<a style="color: #194750; text-decoration: underline;" href="#">info@abcwidgets.com</a></p></multiline></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+      <table width="605" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="25">&nbsp;</td>
+        </tr>
+      </table>
+      
+      <!--bar-->
+      
+      <table width="605" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="25">&nbsp;</td>
+        </tr>
+      </table>      
+      
+      <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td background="images/greenbar.jpg" valign="top" height="23"><img src="images/greenbar.jpg" width="605" height="23" /></td>
+        </tr>
+      </table>
+      <!--/bar-->
+      
+      <table width="605" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="25">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<!--/100% body table-->
+</body>
+</html>

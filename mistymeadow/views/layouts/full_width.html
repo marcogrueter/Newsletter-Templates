@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Email Template - misty medow</title>
+    <style type="text/css">p { font-size: 12px; font-family: Georgia, Times New Roman,
+    Times, serif; margin-bottom: 12px; margin-top: 0px; padding: 0px; color: #333; } a {
+    color: #1c5584; text-decoration: underline; } a:hover { color: #09F !important;
+    text-decoration: underline !important; } h1 { font-size: 58px; font-family: Georgia,
+    Times New Roman, Times, serif; margin: 0px; padding: 0px; color: #1c5584 !important;
+    font-weight: normal; } h3 { color: #1c5584 !important; font-size: 16px; font-family:
+    Georgia, Times New Roman, Times, serif; margin-bottom: 10px; margin-top: 0; padding:
+    0px; font-weight: bold; } h4 { color: #1c5584 !important; font-size: 16px;
+    font-family: Georgia, Times New Roman, Times, serif; margin-bottom: 10px; margin-top:
+    0; padding: 0px; font-weight: bold; } .intro p { font-size: 18px; font-family:
+    Georgia, Times New Roman, Times, serif; margin-bottom: 12px; margin-top: 0; padding:
+    0px; color: #333; font-style: italic; } .toc h2 { color: #1c5584 !important;
+    font-family: Georgia, Times New Roman, Times, serif; margin-top: 0px; margin-bottom:
+    10px; padding: 0px; font-weight: bold; font-size: 18px; } .toc p { margin-bottom:
+    0px; margin-top: 0px; } .toc a { text-decoration: none; }</style>
+  </head>
+  <body style="margin: 0px; background-color: #ffffff; background-image: url(images/top-bg.jpg); background-repeat: repeat;"
+  marginheight="0" topmargin="0" marginwidth="0" leftmargin="0" bgcolor="#ffffff">
+    <!--100% body table-->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+          <!--top links-->
+          <table width="620" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td valign="top" height="20"></td>
+            </tr>
+            <tr>
+              <td height="60" style="text-align:center;" valign="top">
+                <p>Having trouble reading this email? 
+                <a href="{{ url:webversion }}" style="color: #1c5584; font-size: 12px; font-family: Georgia, Times New Roman, Times, serif; margin: 0px; padding: 0px; text-decoration: underline;">View it in your browser.</a>
+                <br />Not interested anymore? 
+                <a href="{{ url:unsubscribe }}" style="color: #1c5584; text-decoration: underline;"
+                >Unsubscribe Instantly.</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td height="80" valign="top">
+                <h1>
+                  <singleline label="Title">ABC Widgets</singleline>
+                </h1>
+              </td>
+            </tr>
+          </table>
+          <!--/top links-->
+          <!--top intro-->
+          <table class="toc" width="620" border="0" align="center" cellpadding="0"
+          cellspacing="0">
+            <tr>
+              <td valign="top" width="400">
+                <table width="370" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="intro" valign="top">
+                      <multiline label="Description">
+                        <p>Enter description here</p>
+                      </multiline>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="220" valign="top">
+                <h2>IN THIS ISSUE</h2>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td>
+                      <repeater>
+                        <p>
+                          <singleline label="Title">Title Here</singleline>
+                        </p>
+                        <img style="margin: 0px; padding: 0px; display: block; float:left;"
+                        src="images/line.gif" height="15" width="197" />
+                      </repeater>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--/top intro-->
+          <!--email content-->
+          <table width="620" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td height="40"></td>
+            </tr>
+            <tr>
+              <td style="background-color: #f1f1f1; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; -khtml-border-radius: 6px;">
+
+                <repeater>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                      <td valign="top" width="65%">
+                        <h3>
+                          <singleline label="Title" repeatertitle="true">Enter title
+                          here</singleline>
+                        </h3>
+                        <multiline label="Description">
+                          <p>Enter description here</p>
+                        </multiline>
+                      </td>
+                      <td valign="top" width="35%">
+                        <img style="border: solid 1px #FFF; margin: 0px; padding: 0px; display: block;"
+                        width="216" alt="img1" editable="true" label="Image" />
+                      </td>
+                    </tr>
+                  </table>
+                </repeater>
+              </td>
+            </tr>
+            <tr>
+              <td height="40"></td>
+            </tr>
+          </table>
+          <!--/email content-->
+          <!--footer-->
+          <table style="background-color: #f1f1f1; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; -khtml-border-radius: 6px;"
+          width="620" border="0" align="center" cellpadding="20" cellspacing="0">
+            <tr>
+              <td valign="top">
+                <h4>Forward this issue</h4>
+                <multiline label="Description">
+                  <p>Do you know someone who might be interested in receiving this
+                  monthly newsletter?</p>
+                </multiline>
+                <!--button-->
+                <table width="100" border="0" cellspacing="0" cellpadding="10">
+                  <tr>
+                    <td style="border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px; font-size: 12px; font-family: Georgia, 'Times New Roman', Times, serif; color: #333; margin: 0; padding: 0; text-align: center;"
+                    height="35" bgcolor="#d7e0dc">
+                      <a href="{{ url:forward }}" style="text-decoration: none; color: #333;">
+                      Forward</a>
+                    </td>
+                  </tr>
+                </table>
+                <!--/button-->
+              </td>
+              <td valign="top">
+                <h4>Unsubscribe</h4>
+                <multiline label="Description">
+                  <p>You are receiving this newsletter because you signed up for the ABC
+                  Widget Newsletter.</p>
+                </multiline>
+                <!--button-->
+                <table width="100" border="0" cellspacing="0" cellpadding="10">
+                  <tr>
+                    <td style="border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px; font-size: 12px; font-family: Georgia, 'Times New Roman', Times, serif; color: #333; margin: 0; padding: 0; text-align: center;"
+                    height="35" bgcolor="#d7e0dc">
+                      <a href="{{ url:unsubscribe }}" style="text-decoration: none; color: #333;">
+                      Unsubscribe</a>
+                    </td>
+                  </tr>
+                </table>
+                <!--/button-->
+              </td>
+              <td valign="top">
+                <h4>
+                  <singleline label="Title">Contact Us</singleline>
+                </h4>
+                <multiline label="Description">
+                  <p>123 Some Street 
+                  <br />City, State 
+                  <br />99999 
+                  <br />(147) 789 7745 
+                  <br />
+                  <a href="#">www.abcwidgets.com</a></p>
+                </multiline>
+              </td>
+            </tr>
+          </table>
+          <!--/footer-->
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color: #ffffff; background-image: url(images/bottom-bg.jpg); background-position: center; background-repeat: no-repeat;"
+        height="147"></td>
+      </tr>
+    </table>
+    <!--/100% body table-->
+  </body>
+</html>

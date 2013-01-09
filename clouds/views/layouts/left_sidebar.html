@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />	
+		<title>Email template - Head In The Clouds</title>
+		<!--general stylesheet-->
+		<style type="text/css">
+			p { padding: 0; margin: 0; }
+			h1, h2, h3, p, li { font-family: Georgia, Helvetica, sans-serif, Arial; }
+			td { vertical-align:top;}
+			ul, ol { margin: 0; padding: 0;}
+			.content-item h2 { margin: 0; padding-left:20px; padding-top:3px; padding-bottom:3px; font-size: 24px; color: #626b73 !important; font-weight: normal; background-color: #cbd3db; background-image: url('images/article-title-bg.jpg'); background-repeat: repeat; background-position: center center;}
+			.content-item p { color: #798692; font-size:14px; line-height:20px;}
+			.content-item a { color:#353d43; text-decoration: underline;}
+			.sidebar h4{ margin: 0; padding-bottom:5px; color:#FFFFFF !important; text-transform: uppercase; font-size:10px; letter-spacing:2px;}
+			.sidebar  p { margin:0; padding-top:5px; color: #6e7c88; font-size:12px; line-height:18px;}
+			.toc a { color:#3d464c; font-style: italic; font-weight:lighter; font-family: Georgia; }
+			.footer p {font-family: Georgia; margin:0; padding-bottom: 3px; padding-top: 3px; color:#6e7c88; font-size: 12px;}
+			.footer a { font-family: Georgia; color:#475056; font-size:12px; font-weight:lighter; font-style: italic; text-decoration:none;}
+		</style>
+	</head>
+	<body marginheight="0" topmargin="0" marginwidth="0" leftmargin="0" bgcolor="#cad3db" background="images/body-bg.jpg" style="margin: 0px; background-color: #cad3db; background-image: url('images/body-bg.jpg'); background-repeat: repeat;">
+		<table cellspacing="0" border="0" cellpadding="0" width="100%" align="center" style="margin: 0px;">
+			<tbody>
+				<tr valign="top">
+					<td valign="top" background="images/body-bg.jpg" style="margin: 0px; background-image: url('images/body-bg.jpg'); background-repeat: repeat;"><!--container-->
+						<table cellspacing="0" cellpadding="0" border="0" align="center" width="600">
+							<tbody>
+								<tr>
+									<td valign="top">
+										<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="padding-left: 5px; padding-right: 5px;">
+											<tbody>
+												<tr>
+													<td valign="top">
+														<table cellspacing="0" cellpadding="0" border="0" align="center" background="images/clouds-bg.jpg" style="background-image: url('images/clouds-bg.jpg'); background-repeat: no-repeat; background-position: center top; ">
+				                                            <tbody>
+				                                                <tr>
+				                                                    <td colspan="2" valign="top" style="padding-top: 15px; padding-bottom: 8px;">
+				                                                        <p style="margin:0; color:#6e7c88; font-size: 12px; line-height: 1.4">
+				                                                            <singleline label="Title">You are receiving this newsletter because you bought widgets from us.</singleline><br />
+				                                                        
+				                                                            Not interested anymore? <a href="{{ url:unsubscribe }}" style="color:#475056; font-size:12px; font-weight:lighter; font-style: italic; text-decoration:none;">Unsubscribe</a>. Having trouble viewing this email? 
+																			<a href="{{ url:webversion }}" style="color:#475056; font-size:12px; font-weight:lighter; font-style: italic; text-decoration:none;">View it in your browser</a>.
+				                                                        </p>
+				                                                    </td>
+				                                                </tr>
+				                                                <tr>
+				                                                    <td valign="baseline" style="vertical-align:baseline; text-align: left;">
+				                                                        <h1 style="margin:0; font-size:34px; text-transform: uppercase; font-weight:normal; color:#FFFFFF !important; letter-spacing:2px; font-family: Gill Sans, Trebuchet MS, Helvetica, Arial, sans-serif;">
+																			<singleline label="Title">Enter Newsletter Title Here</singleline>
+																		</h1>
+				                                                    </td>
+				                                                    <td valign="baseline" style="vertical-align:baseline; text-align: right;">
+				                                                        <span class="date" style="font-size:12px; color:#6e7c88;">{{ helper:date format="F" }} <currentday />, {{ helper:date format="Y" }}</span>
+				                                                    </td>
+				                                                </tr>
+				                                                <tr>
+				                                                    <td colspan="2" valign="top" style="padding-top: 10px; padding-bottom: 15px;">
+				                                                        <img width="600" height="7" src="images/divider.png" alt="" style="display: block;" />
+				                                                    </td>
+				                                                </tr>
+				                                            </tbody>
+				                                        </table>
+													</td>
+												</tr>
+												<tr>
+													<td valign="top" colspan="2">
+														<table cellspacing="0" border="0" cellpadding="0" width="600" align="center" style="margin: 0px;">
+															<tbody>
+																<tr>
+																	<td valign="top" width="200" background="images/images/cloud-2.jpg" style="background-image: url('images/cloud-2.jpg'); background-repeat: no-repeat; background-position: right bottom; ">
+																		<table cellspacing="0" border="0" cellpadding="0" align="left" width="170" style="">
+																			<tbody>
+																				<tr>
+																					<td valign="top" class="sidebar">
+																						<table cellspacing="0" border="0" cellpadding="0" align="center" style="padding-bottom: 20px;">
+																							<tbody>
+																								<tr>
+																									<td valign="top">
+																										<h4>Contents</h4>
+																										<img width="170" height="2" src="images/sidebar-sep.jpg" alt="" style="margin:0; padding:0; display: block;" />
+																									</td>
+																								</tr>
+																								<tr>
+																									<td valign="top" class="toc">
+																										<table cellspacing="0" border="0" cellpadding="0" align="left" width="170" style="padding-top:5px; color:#3d464c; font-style: italic; font-weight:lighter; font-family: Georgia;">
+				                                                                                            <tbody>
+				                                                                                            	<tableofcontents>
+																													<tr>
+					                                                                                                    <td valign="top" width="12" height="10" style="padding-top: 2px; padding-bottom: 2px; vertical-align:top;">
+					                                                                                                        <img width="5" height="5" src="images/bullet-1.jpg" alt="" style="padding-top: 5px; padding-bottom: 2px; display:block;" />
+					                                                                                                    </td>
+					                                                                                                    <td valign="top" style="padding-top: 2px; padding-bottom: 2px; vertical-align:top; font-size:12px;">
+					                                                                                                        <repeatertitle />
+					                                                                                                    </td>
+					                                                                                                </tr>
+																												</tableofcontents>
+				                                                                                            </tbody>
+				                                                                                        </table>
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td valign="top" class="sidebar">
+																						<table cellspacing="0" border="0" cellpadding="0" align="center" style="padding-bottom: 20px;">
+																							<tbody>
+																								<tr>
+																									<td valign="top">
+																										<h4 style="">In short</h4>
+																										<img width="170" height="2" src="images/sidebar-sep.jpg" alt="" style="margin:0; padding:0; display: block;" />
+																									</td>
+																								</tr>
+																								<tr>
+																									<td valign="top">
+																										<repeater toc='false'>
+																										<multiline label="Description"><p>Enter short description here</p></multiline>
+																										</repeater>
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td valign="top" class="sidebar">
+																						<table cellspacing="0" border="0" cellpadding="0" align="center" style="padding-bottom: 20px;">
+																							<tbody>
+																								<tr>
+																									<td valign="top">
+																										<h4>Share this</h4>
+																										<img width="170" height="2" src="images/sidebar-sep.jpg" alt="" style="margin:0; padding:0; display: block;" />
+																									</td>
+																								</tr>
+																								<tr>
+																									<td valign="top">
+																										<p>Know someone who might be interested in the email? Why not <a href="{{ url:forward }}" style="font-style:italic; color:#353d43; text-decoration:none;"><span style="font-style:italic; color:#353d43;">forward this email</span></a> to them.</p>
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td valign="top" class="sidebar">
+																						<table cellspacing="0" border="0" cellpadding="0" align="center" style="padding-bottom: 20px;">
+																							<tbody>
+																								<tr>
+																									<td valign="top">
+																										<h4>Unsubscribe</h4>
+																										<img width="170" height="2" src="images/sidebar-sep.jpg" alt="" style="margin:0; padding:0; display: block;" />
+																									</td>
+																								</tr>
+																								<tr>
+																									<td valign="top">
+																										<p>Don't want to receive these emails any more. Please <a href="{{ url:unsubscribe }}" style="font-style:italic; color:#353d43; text-decoration:none;"><span style="font-style:italic; color:#353d43;">unsubscribe</span></a>.</p>
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																	<td valign="top" width="400" style="padding-bottom:20px;">
+																		<repeater>
+																		<table cellspacing="0" border="0" cellpadding="0" align="center" width="400" style="margin: 0px;">
+																			<tbody>
+																				<tr>
+																					<td valign="top">
+																						<table cellspacing="0" border="0" cellpadding="0" align="center" width="400" style="border:10px; border-style:solid; border-color:#f3f5f7; background-color: #dfe4e9;" class="content-item">
+																							<tbody>
+																								<tr>
+																									<td valign="top" style="padding-bottom: 20px; padding-top:20px;">
+																										<h2>
+																											<singleline label="Title" repeatertitle="true">Enter the article title</singleline>
+																										</h2>
+																										<table cellspacing="0" border="0" cellpadding="0" align="center" width="340" style="padding-top:10px;">
+																											<tbody>
+																												<tr>
+																													<td valign="top">
+																														<img width="321" height="170" alt="." style="margin-bottom: 10px; border: 10px; border-color: #c2cad2; border-style: solid;" editable="true" label="Image" />
+																														<multiline label="Description"><p>Enter article <span style=" font-style:italic; color:#515d68;">content</span> here</p></multiline>
+																													</td>
+																												</tr>
+																											</tbody>
+																										</table>
+																									</td>
+																								</tr>
+																							</tbody>
+																							
+																						</table>
+																						
+																					</td>
+																				</tr>
+																				<tr>
+																					<td valign="top" style="padding-top: 20px; padding-bottom: 20px;"><img width="400" height="8" src="images/divider-small.png" alt="" style="display: block;" /></td>
+																				</tr>
+																				
+																			</tbody>
+																		</table>
+																		</repeater>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="2" valign="top" style=" padding: 10px 0 20px;" class="footer">
+														<multiline label="Description"><p>ABCWidgets Corp - 123 Some Street, City, ST 99999. Ph +1 4 1477 89 745</p> </multiline>
+													</td>	
+												</tr>
+												<tr>
+													<td colspan="2" valign="top" style=" padding-bottom: 20px;"><img width="600" height="7" src="images/divider.png" alt="" style="display:block;" /></td>
+												</tr>
+													
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table><!--/container-->
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,234 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Email Template - Grunge Grinders</title>
+<style type="text/css">
+body { font-size: 12px; color: #666; margin: 0; padding: 0; font-family: Georgia, Times New Roman, Times, serif; }
+h1 { margin: 0; padding: 0; font-family: Georgia, Times New Roman, Times, serif; color: #FFF !important; font-size: 24px; }
+h2 { color: #000000 !important; font-size: 21px; font-family:Georgia, Times New Roman, Times, serif; margin: 0px; padding: 0; text-shadow: 1px 1px 1px #fff; }
+h3 { color: #000000 !important; font-size: 14px; font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; font-weight: bold; }
+.content p, .sidebar p { color: #000; font-size: 14px; font-family:Georgia, Times New Roman, Times, serif; margin-top: 0px; margin-bottom: 12px; padding: 0; }
+.footer p { font-size: 12px; color: #666; margin: 0; padding: 0; font-family: Georgia, Times New Roman, Times, serif; }
+.footer a, .sidebar a, .content a { color: #cc0000; text-decoration: none; }
+.footer2 { font-size: 12px; color: #666; margin: 0; padding: 0; font-family: Georgia, Times New Roman, Times, serif; text-transform: uppercase; }
+li, li a { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cc0000; font-weight: bold; margin-top: 0; margin-bottom: 0; padding: 0; }
+</style>
+<!--[if gte mso 9]>
+<style type="text/css">
+.body {background: #4d4031 url('images/body-bg.jpg');}	     
+.case {background: none;}
+</style>
+<![endif]-->
+</head>
+<body class="body" style="margin: 0; padding: 0; background-color: #4d4031; background-image: url(images/body-bg.jpg); background-repeat: repeat;" marginheight="0" topmargin="0" marginwidth="0" leftmargin="0">
+<!--100% body table-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td class="case" bgcolor="#d8e7ea" style="background-color: #4d4031; background-image: url(images/body-bg.jpg); background-repeat: repeat;">
+            <!--[if gte mso 9]>
+            <td style="background: none;">
+            <![endif]-->
+            <!--container-->
+            <table width="620" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="background-image: url(images/left-side.jpg); background-repeat: repeat;" background="images/left-side.jpg" bgcolor="#d4d1cd" valign="top" width="22"></td>
+                    <td width="576" valign="top" bgcolor="#d4d1cd">
+                        <!--top-->
+                        <table width="575" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td align="center" height="60">
+                                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000; text-transform: uppercase; margin: 0; padding: 0;">Email not looking beautiful?
+                                        <a href="{{ url:webversion }}" style="text-decoration: none; color: #cc0000">View it in your browser</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--/top-->
+                        <!--header-->
+                        <table width="575" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td valign="top" height="90" style="background-image: url(images/header-bg.jpg); background-position:left; background-repeat: no-repeat; background-color: #000;">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td height="10" width="6%"></td>
+                                            <td height="10" width="94%"></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td valign="top">
+                                                <table width="450" border="0" cellspacing="0" cellpadding="8">
+                                                    <tr>
+                                                        <td bgcolor="#000000">
+                                                            <h1><singleline label="Title">Enter Title Here</singleline></h1>
+                                                            <p style="margin: 0; padding: 0; font-family: Georgia, 'Times New Roman', Times, serif; color: #FFF; font-size: 12px;">
+                                                                <currentdayname /> <currentday /> {{ helper:date format="F" }} {{ helper:date format="Y" }}
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--/header-->
+                        <!--break-->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="15"></td>
+                            </tr>
+                        </table>
+                        <!--/break-->
+                        <table width="545" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="sidebar" valign="top" width="38%">
+                                    <h3><singleline label="Title">In This Issue</singleline></h3>
+                                    <!--break-->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td height="12"></td>
+                                        </tr>
+                                    </table>
+                                    <!--/break-->
+                                    <ul style="margin: 0; padding-left: 14px; line-height: 18px; list-style: disc;">
+                                       <tableofcontents>
+                                         <li><repeatertitle /></li>
+                                       </tableofcontents>
+                                    </ul>
+                                    <!--break-->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td height="20"></td>
+                                        </tr>
+                                    </table>
+                                    <!--/break-->
+                                    
+                                    <repeater>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td>
+                                                <h3><singleline label="Title" repeatertitle="true">Enter Title Here</singleline></h3>
+                                                <multiline label="Description"><p>Enter description here</p></multiline>
+                                                <!--break-->
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td height="20"></td>
+                                                    </tr>
+                                                </table>
+                                                <!--/break-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    </repeater>
+                                    
+                                    <!--button-->
+                                    <table width="200" border="0" cellspacing="0" cellpadding="10">
+                                        <tr>
+                                            <td style="color: #ffffff; text-align: center; background-image: url(images/share.jpg); background-position: center; background-repeat: no-repeat;" height="48">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="3">
+                                                    <tr>
+                                                        <td bgcolor="#cc0000" align="center" height="20">
+                                                            <a href="{{ url:forward }}" style="text-decoration: none; color: #FFF; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Share this email</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--/button-->
+                                </td>
+                                <td valign="top" width="62%">
+                                    <table class="content" width="300" border="0" align="right" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                
+                                                
+                                                <repeater>
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                <td>
+                                                <h2><singleline label="Title" repeatertitle="true">Enter Title Here</singleline></h2>
+                                                <!--break-->
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td height="12"></td>
+                                                    </tr>
+                                                </table>
+                                                <!--/break-->
+                                                <multiline label="Description"><p>Enter description here</p></multiline>
+                                                <!--break-->
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td height="12"></td>
+                                                    </tr>
+                                                </table>
+                                                <!--/break-->
+                                                <img style="margin: 0; padding: 0; display: block; border: solid 10px #000;" alt="img3" width="280" height="151" editable="true" label="Image" />
+                                                <!--break-->
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td height="25"></td>
+                                                    </tr>
+                                                </table>
+                                                <!--/break-->
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                </repeater>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!--dash-->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td align="center" valign="bottom" height="40"><img src="images/line-dash.jpg" width="559" height="22" /></td>
+                            </tr>
+                        </table>
+                        <!--/dash-->
+                        <table width="560" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="footer" width="57%" valign="top">
+                                   <p><multiline label="Description">You received this email because at some point in the past you either bought one of our products, signed up to our mailing list, or drunk some of that ‘special’ tea we slipped you. If you’d like, you can</multiline> <a href="{{ url:unsubscribe }}" style="color: #cc0000; text-decoration: none;">unsubscribe</a></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--dash-->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td align="center" valign="top" height="30"><img src="images/line-dash.jpg" width="559" height="22" /></td>
+                            </tr>
+                        </table>
+                        <!--/dash-->
+                        <table align="center" width="560" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="footer2" align="center">
+                                    <multiline label="Description"><p>Company and the Company logo are registered trademarks of Company
+Company — 123 Some Street, City, ST 99999. Ph +1 4 1477 89 745</p></multiline>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--break-->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="25"></td>
+                            </tr>
+                        </table>
+                        <!--/break-->
+                        <!--footer-->
+                    </td>
+                    <td style="background-image: url(images/right-side.jpg); background-repeat: repeat;" background="images/right-side.jpg" bgcolor="#d4d1cd" valign="top" width="22"></td>
+                </tr>
+            </table>
+            <!--/container-->
+        </td>
+    </tr>
+</table>
+<!--/100% body table-->
+</body>
+</html>

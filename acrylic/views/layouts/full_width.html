@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />	
+		<title>Newsletter template</title>
+		<!--general stylesheet-->
+		<style type="text/css">
+			h1, h2, h3, h4, h5 { margin: 0; padding: 0; }
+			p { padding: 0; margin: 0; }
+			h2, h3, p, li { font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif; color: #ffffff !important; }
+			td { vertical-align:top;}
+			ul, ol { margin: 0; padding: 0;}
+			h1, .date { font-family:"Lucida Fax",Georgia,Helvetica,Arial,sans-serif; }
+			.content-item h2 {margin: 0; padding: 0; font-size: 18px; font-weight: normal; color: #ffffff !important; }
+			.content-item a { color: #ff9e9e; text-decoration: underline; font-weight: normal;}
+			.content-item p { margin: 0 0 12px; padding: 0; font-size: 12px; font-weight: normal; line-height: 20px; color: #ffffff;}
+			
+			.address p{  font-size: 13px; text-align: center; font-family:Lucida Grande,Lucida Sans Unicode,arial,sans-serif; color: #ffadad;}
+			a { color: #ff9e9e; text-decoration: underline; font-weight: normal;}
+			
+		</style>
+	</head>
+	<body marginheight="0" topmargin="0" marginwidth="0" leftmargin="0" background="" style="margin: 0px; background-color: #652416; background-image: url(''); background-repeat: repeat;" bgcolor="#652416">
+		<table cellspacing="0" border="0" cellpadding="0" width="100%">
+			<tbody>
+				<tr valign="top">
+					<td><!--container-->
+						<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#652416" width="750" height="1000">
+							<tbody>
+								<tr><!--content-->
+									<td>
+										<table cellspacing="0" cellpadding="0" border="0" align="center" width="700">
+											<tbody>
+												<tr>
+													<td valign="top" background="images/head-area.jpg" bgcolor="#c52223" height="144">
+														<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" height="144" style="height: 144px !important;">
+															<tbody>
+																<tr>
+																	<td valign="middle" width="500" style="vertical-align:middle;">
+																		<table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" height="100%">
+																			<tbody>
+																				<tr>
+																					<td colspan="2" height="55" valign="top">&nbsp;</td>
+																				</tr>
+																				<tr>
+																					<td width="28" valign="top">&nbsp;</td>
+																					<td valign="top">
+																						<h1 style="font-size:28px; font-weight: normal; color: #ffffff !important; margin:0; padding: 0; font-family:Lucida Fax,Georgia,Helvetica,Arial,sans-serif;">
+																						<singleline label="Title">Enter Newsletter Title Here</singleline>
+																					</h1>
+																					<h2 class="date" style="font-size:16px; font-weight: normal; color: #f8aaaa !important; margin:0; padding: 0; font-family:Lucida Fax,Georgia,Helvetica,Arial,sans-serif;">
+																						{{ helper:date format="F" }} Newsletter
+																					</h2>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td colspan="2" height="34" valign="top">&nbsp;</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		
+																	</td>
+																	<td valign="top" width="200">
+																		<img width="200" height="144" src="images/art-brush.png" alt="" style="display:block;" />
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td height="26" valign="top" style="height: 26px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<td valign="top">
+														<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+															<tr>
+																<td valign="top" width="100%"><!--main content-->
+																 <repeater>
+													<!--article--><table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="border-bottom-width: 30px; border-bottom-style: solid; border-bottom-color: #652416;" class="content-item">
+																		<tbody>
+																			<tr>
+																				<td valign="top" height="32" style="height: 32px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #cf2828;">
+																					<h2>
+																						<singleline label="Title">Enter Article Title Here</singleline>
+																					</h2>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td valign="top" style="border-top-width: 10px; border-top-style: solid; border-top-color:#652416;">
+																				<img width="318" height="211" alt="" align="left" style="margin-right: 10px; border-width: 2px; border-style: solid; border-color: #541b0f;" src="images/photo-1.gif" editable="true" label="Image" />
+																				<multiline label="Description"><p style="">Enter article content here</p></multiline>
+																				</td>
+																			</tr>
+																		</tbody>
+													<!--/article--></table>
+																	</repeater>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td valign="middle" height="46" background="images/footer-area.jpg" bgcolor="#c52223" style="vertical-align:middle; height:46px;">
+														<p style="color:#ffadad; font-size: 11px; text-align: center; font-family:Lucida Grande,Lucida Sans Unicode,arial,sans-serif;">
+															Don't want to receive these newsletters anymore? Manage your <preferences style="color:#ffffff; font-weight: bold; text-decoration: none;">email preferences</preferences> here, or <a href="{{ url:unsubscribe }}" style="color:#ffffff; font-weight: bold; text-decoration: none;">unsubscribe</a>.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="60" valign="middle" style="vertical-align:middle; height:60px;color: #ffadad;" class="address">
+														<multiline label="Description"><p>Art Institute &middot; 191 Fake Street &middot; Seattle, Washington</p></multiline>
+													</td>
+												</tr>
+												<tr>
+													<td height="50" valign="top" style="height:50px;">&nbsp;</td>
+												</tr>
+											</tbody>
+										</table>
+									</td><!--/content-->
+								</tr>
+							</tbody>
+						</table><!--/container-->
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

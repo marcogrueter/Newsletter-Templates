@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Email Template - Soft</title>
+<style type="text/css">
+h1 { font-size: 44px; font-family: Georgia, Times New Roman, Times, serif; text-shadow: #000000 -1px -1px 0px; color: #4e3227 !important; margin: 0px; }
+h2 { color: #FFFFFF !important; margin: 0px; text-shadow: #999999 -1px -1px 0px; font-size: 36px; font-family: Georgia, Times New Roman, Times, serif; }
+h3 { font-size: 24px; font-family: Georgia, Times New Roman, Times, serif; color: #4e3227 !important; margin-top: 0; margin-bottom: 12px; }
+h4 { color: #4e3227 !important; margin-top: 0; margin-bottom: 6px; font-size: 18px; font-family: Georgia, Times New Roman, Times, serif; text-decoration: none; }
+p { font-size: 16px; line-height: 24px; font-family: Georgia, Times New Roman, Times, serif; color: #7d868c; margin: 0px 0px 12px; }
+a { color: #f0727b; text-decoration: underline; }
+a:hover { color: #4e3227 !important; text-decoration: underline !important; }
+.intro p, .intro a { color: #FFFFFF; margin: 0px; text-shadow: #999999 -1px -1px 0px; font-size: 21px; font-family: Georgia, Times New Roman, Times, serif; text-decoration: none; }
+.footer p { color: #b2b2b2; margin: 0px 0px 12px; font-size: 13px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.extrabox h4, .extrabox h4 a, .extrabox p { color: #FFFFFF !important; text-decoration: none; }
+</style>
+</head>
+<body marginheight="0" topmargin="0" marginwidth="0" style="margin: 0px; background-color: #fdfcf9; background-image: url('images/body-bg.jpg'); background-repeat: repeat;" bgcolor="#FFFFFF" leftmargin="0">
+<!--100% body table-->
+<table cellspacing="0" background="images/body-bg.jpg" border="0" cellpadding="0" width="100%" bgcolor="#fdfcf9">
+    <tr>
+        <td>
+            <!--email container-->
+            <table cellspacing="0" border="0" align="center" cellpadding="0" width="676">
+                <tr>
+                    <td>
+                        <!--top-->
+                        <table cellspacing="0" border="0" cellpadding="0" width="676">
+                            <tr>
+                                <td height="50" valign="middle">
+                                    <p style="color: #b2b2b2; margin: 0px; font-size: 12px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Is this email not displaying correctly?
+                                        <a href="{{ url:webversion }}" style="color: #f0727b; font-size: 12px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; text-decoration: underline;">Try the web version.</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--/top-->
+                        <!--email content-->
+                        <table cellspacing="0" border="0" style="border: solid 1px #e3e3e3;" bgcolor="#FFFFFF" cellpadding="0" width="676">
+                            <tr>
+                                <td>
+                                    <!--intro-->
+                                    <table cellspacing="0" border="0" cellpadding="0" width="676" style="background: url(images/dash.jpg) top repeat-x;">
+                                        <tr>
+                                            <td height="150" valign="top" width="502">
+                                                <table cellspacing="0" border="0" cellpadding="0" width="100%">
+                                                    <tr>
+                                                        <td height="150">
+                                                            <table width="470" border="0" align="right" cellpadding="0" cellspacing="0">
+                                                                <tr>
+                                                                    <td>
+                                                                        <h1>
+                                                                            <singleline label="Title">ABC</singleline>
+                                                                        </h1>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td valign="top" width="174">
+                                                <table cellspacing="0" border="0" cellpadding="0" width="143">
+                                                    <tr>
+                                                        <td background="images/date-bg.jpg" height="126" valign="bottom" style="background-image: url(images/date-bg.jpg); background-repeat: no-repeat; background-position: bottom; background-color: #b8cfc8;" bgcolor="#b8cfc8">
+                                                            <table cellspacing="0" border="0" cellpadding="0" width="100%">
+                                                                <tr>
+                                                                    <td align="center" height="60">
+                                                                        <h2 style="font-size: 22px; font-family: Georgia, 'Times New Roman', Times, serif; color: #ffffff !important; margin: 0px;">
+                                                                            {{ helper:date format="F" }}
+                                                                        </h2>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="0" border="0" cellpadding="0" width="676">
+                                        <tr>
+                                            <td background="images/img3.jpg" valign="top" style="background-color: #b8cbd9; background-image: url(images/img3.jpg); background-repeat: repeat-y;" bgcolor="#b8cbd9"> <img style="margin:0; padding:0;" src="images/in-this-issue.jpg" width="676" height="76" alt="in this issue" />
+                                                <table class="intro" cellspacing="0" border="0" cellpadding="30" width="676">
+                                                    <tr>
+                                                        <td>
+                                                            <tableofcontents>
+                                                                <p><repeatertitle /></p>
+                                                                <img style="display:block; margin:0; padding:0;" src="images/intro-line-break.jpg" width="616" height="19" />
+                                                             </tableofcontents>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--/intro-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="images/img4.jpg" height="39" width="676" /> </td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="0" border="0" cellpadding="25" width="676">
+                                        <tr>
+                                            <td>
+                                                <!--section-->
+                                                <table cellspacing="0" border="0" cellpadding="0" width="100%">
+                                                    <tr>
+                                                        <td valign="top" width="63%">
+                                                            <repeater>
+                                                                <!-- section -->
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <h3>
+                                                                                <singleline label="Title" repeatertitle="true">Enter Title Here</singleline>
+                                                                            </h3>
+                                                                            <multiline label="Description"><p>Enter description here</p></multiline>
+                                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td><img src="images/line-break-short.jpg" width="381" height="21" /></td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <!-- / section -->
+                                                            </repeater>
+                                                        </td>
+                                                        <td valign="top" width="37%">
+                                                            <table width="220" border="0" align="right" cellpadding="0" cellspacing="0">
+                                                                <tr>
+                                                                    <td>
+                                                                    
+                                                                        <table width="220" border="0" cellspacing="0" cellpadding="0">
+                                                                            <tr>
+                                                                                <td valign="top" height="20" bgcolor="#b8cbd9" style="background-color: #b8cbd9;">
+                                                                                <img style="margin: 0; padding: 0; display: block;" src="images/ftf-top.jpg" width="220" height="20" /></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" bgcolor="#b8cbd9" style="background-color: #b8cbd9;">
+                                                                                 <repeater>
+                                                                                        <table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="extrabox">
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <h4>
+                                                                                                        <singleline label="Title">Enter Title Here</singleline>
+                                                                                                    </h4>
+                                                                                                    <multiline label="Description"><p>Enter description here</p></multiline>
+                                                                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                      <tr>
+                                                                                                        <td height="15"></td>
+                                                                                                      </tr>
+                                                                                                   </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                        </repeater>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top" height="20" bgcolor="#b8cbd9" style="background-color: #b8cbd9;">
+                                                                                <img style="margin: 0; padding: 0; display: block;" src="images/ftf-bottom.jpg" width="220" height="20" /></td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                            <tr>
+                                                                                <td height="20"></td>
+                                                                            </tr>
+                                                                        </table>
+                                                                       
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td> </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <h4> Forward to a friend </h4>
+                                                                        <p>Know someone who might be interested in this email?</p>
+                                                                        <p>
+                                                                            <a href="{{ url:forward }}" style="float: left; width: 160px; background-color: #47b594; text-decoration: none; padding: 5px; color: #FFF; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; -khtml-border-radius: 4px;">Forward to a friend »</a>
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                            <tr>
+                                                                                <td height="25"></td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <h4> Unsubscribe </h4>
+                                                                        <p>Don’t want to receive these emails anymore? You can unsubscribe instantly.</p>
+                                                                        <p>
+                                                                            <a href="{{ url:unsubscribe }}" style="float: left; width: 140px; background-color: #47b594; text-decoration: none; padding: 5px; color: #FFF; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; -khtml-border-radius: 4px;">Unsubscribe »</a>
+                                                                        </p>
+                                                                        <br />
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--/section-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--/email content-->
+                        <!--footer-->
+                        <table class="footer" cellspacing="0" id="footer" border="0" width="100%" cellpadding="20">
+                            <tr>
+                                <td valign="top" width="300">
+                                    <multiline label="Description"><p>You’re receiving this newsletter because you’ve subscribed to our Newsletter.</p></multiline>
+                                    <p>
+                                        <a href="{{ url:unsubscribe }}" style="color: #f0727b; text-decoration: underline; font-size: 13px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" href="#">Unsubscribe instantly.</a>
+                                    </p>
+                                </td>
+                                <td valign="top" width="300">
+                                    <table cellspacing="0" border="0" width="220" cellpadding="0">
+                                        <tr>
+                                            <td valign="top"><a href="#" style="text-decoration: underline; color: #ff881c;"><img src="images/home-icon.png" border="0" height="19" alt="visit us" width="31" /></a></td>
+                                            <td>
+                                                <multiline label="Description"><p>Newism<br />
+                                                                178 King Street Newcastle<br />
+                                                                NSW, Australtia 2300</p></multiline>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--/footer-->
+                    </td>
+                </tr>
+            </table>
+            <!--/email container-->
+        </td>
+    </tr>
+</table>
+<!--/100% body table-->
+</body>
+</html>

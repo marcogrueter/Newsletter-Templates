@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Email Template - Classic</title>
+<style type="text/css">
+a:hover { text-decoration: underline !important; }
+.issue p {font-size: 36px; font-family: Georgia, Times, serif; color: #ffffff; margin-top: 0px; margin-bottom: 0px; text-shadow: 1px 1px 1px #333;}
+.title h1 { color: #333 !important; margin-top: 0px; margin-bottom: 0px; font-weight: normal; font-size: 48px; font-family: Georgia, Times, serif }
+.date p { font-size: 24px; font-family: Georgia,  Times, serif; color: #ffffff; margin-top: 0px; margin-bottom: 0px;}
+.content h1 { font-size: 24px; font-family: Georgia, 'Times New Roman', Times, serif; color: #333333 !important; margin-top: 0px; margin-bottom: 12px;}
+.content p { font-size: 16px; line-height: 22px; font-family: Georgia, Times, serif; color: #333; margin: 0px;}
+.content a { color: #bc1f31; text-decoration: none;}
+.address p {font-size: 14px; line-height: 24px; font-family: Georgia, Times, serif; color: #b0a08b; margin: 0px;}
+</style>
+</head>
+
+<body marginheight="0" topmargin="0" marginwidth="0" style="margin: 0px; background-color: #f7f2e4;" bgcolor="#f7f2e4" leftmargin="0">
+<!--100% body table-->
+<table cellspacing="0" border="0" cellpadding="0" width="100%" bgcolor="#f7f2e4">
+	<tr>
+		<td>
+			<!--top links-->
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td valign="middle" align="center" height="45">
+						<p style="font-size: 14px; line-height: 24px; font-family: Georgia, 'Times New Roman', Times, serif; color: #b0a08b; margin: 0px;">
+							Is this email not displaying correctly? <a href="{{ url:webversion }}" style="color: #bc1f31; text-decoration: none;">Try the web version.</a></p></td>
+						</tr>
+					</table>
+					<!--header-->
+					<table style="background:url(images/header-bg.jpg); background-repeat: no-repeat; background-position: center; background-color: #fffdf9;" width="684" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td valign="top" width="173">
+											<!--ribbon-->
+											<table border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td height="120" width="45"></td>
+													<td background="images/ribbon.jpg" valign="top" bgcolor="#c72439" height="120" width="80">
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td valign="bottom" align="center" height="35">
+																	<p style="font-size: 14px; font-family: Georgia, 'Times New Roman', Times, serif; color: #ffffff; margin-top: 0px; margin-bottom: 0px;">ISSUE</p>
+																</td>
+															</tr>
+															<tr>
+																<td valign="top" align="center" class="issue">
+																	<p><singleline label="Title">31</singleline></p>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table><!--ribbon-->
+										</td>
+										<td valign="middle" width="493"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td height="60"></td>
+											</tr>
+											<tr>
+												<td class="title">
+													<h1><singleline label="Title">Enter </singleline></h1>
+												</td>
+											</tr>
+											<tr>
+												<td height="40">
+												</td>
+											</tr>
+										</table>
+										<!--date-->
+										<table border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td valign="top" align="center" bgcolor="#312c26" background="images/date-bg.jpg" width="357" height="42" class="date">
+													<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td height="5"></td></tr></table>
+													<p>{{ helper:date format="F" }} {{ helper:date format="Y" }}</p>
+												</td>
+											</tr>
+										</table><!--/date-->
+									</td>
+									<td width="18"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table><!--/header-->
+				<!--email container-->
+				<table bgcolor="#fffdf9" cellspacing="0" border="0" align="center" cellpadding="30" width="684">
+					<tr>
+						<td>
+							<!--email content-->
+							<table cellspacing="0" border="0" id="email-content" cellpadding="0" width="624">
+								<tr>
+									<td>
+										<!--section 3-->
+										<table cellspacing="0" border="0" cellpadding="0" width="100%">
+											<tr>
+												<td class="content">
+													<!--line break-->
+													<table cellspacing="0" border="0" cellpadding="0" width="100%">
+														<tr>
+															<td height="72"><img src="images/line-break-2.jpg" width="622" height="72" /></td>
+														</tr>
+													</table><!--/line break-->
+													<repeater>
+														<table cellspacing="0" border="0" cellpadding="0" width="100%">
+															<tr>
+																<td valign="top" width="378">
+																	<h1><singleline label="Title">Enter Title Here</singleline></h1>
+																<img align="right" alt="img8" style="margin: 0 0 10px 10px; border: solid 1px #FFF; box-shadow: 2px 2px 6px #333; -webkit-box-shadow: 2px 2px 6px #333; -khtml-box-shadow: 2px 2px 6px #333; -moz-box-shadow: 2px 2px 6px #333; float: right;" width="216" editable="true" label="Image" />
+																<multiline label="Description"><p>Enter content here.</p></multiline>
+																</td>
+															</tr>
+														</table>
+														<!--line break-->
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td valign="bottom" height="50"><img src="images/line-break.jpg" width="622" height="27" /></td>
+															</tr>
+														</table><!--/line break-->
+													</repeater>
+
+													<table cellspacing="0" border="0" cellpadding="0" width="100%">
+														<tr>
+															<td height="72"><img src="images/line-break-2.jpg" width="622" height="72" />
+															</td>
+														</tr>
+													</table><!--/line break-->
+												</td>
+											</tr>
+										</table><!--/section 3-->
+									</td>
+								</tr>
+							</table><!--/email content-->
+						</td>
+					</tr>
+				</table><!--/email container-->
+				<!--footer-->
+				<table width="680" border="0" align="center" cellpadding="30" cellspacing="0">
+					<tr>
+						<td valign="top">
+							<p style="font-size: 14px; line-height: 24px; font-family: Georgia, 'Times New Roman', Times, serif; color: #b0a08b; margin: 0px;">
+								<singleline label="Title">You are receiving this newsletter because you bought widgets from us.</singleline><br /> 
+								Not interested anymore? <a href="{{ url:unsubscribe }}" style="color: #bc1f31; text-decoration: none;">Unsubscribe.</a></p>
+							</td>
+							<td valign="top" class="address" width="245"><multiline label="Description"><p>ABCWidgets Corp - 123 Some Street, City, ST 99999. ph +1 4 1477 89 745.</p></multiline>
+							</td>
+						</tr>
+						<tr>
+							<td height="30"></td>
+							<td height="30"></td>
+						</tr>
+					</table><!--/footer-->
+				</td>
+			</tr>
+		</table><!--/100% body table-->
+</body>
+</html>

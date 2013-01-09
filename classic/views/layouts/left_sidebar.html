@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>
+      Classical
+    </title>
+	<style type="text/css">
+	a:hover { text-decoration: none !important; }
+	.header h1 {color: #fff !important; font: normal 33px Georgia, serif; margin: 0; padding: 0; line-height: 33px;}
+	.header p {color: #dfa575; font: normal 11px Georgia, serif; margin: 0; padding: 0; line-height: 11px; letter-spacing: 2px}
+	.sidebar ul  { color: #4c6777; margin: 0 0 0 10px; padding: 0 0 0 5px; font-size: 12px;font-family: Georgia, serif }
+	.sidebar ul li {padding: 0 0 5px; margin: 0;}
+	.sidebar ul a { text-decoration: none; color: #4c6777; }
+	.sidebar h4{color:#4c6777 !important; font-size: 11px;line-height: 16px;font-family: Georgia, serif; margin: 0; padding: 0;}
+	.sidebar p {line-height: 16px; font-family: Georgia, serif;}
+	.sidebar p a{color: #d18648; text-decoration: none;}
+	.content h2 {color:#8598a3 !important; font-weight: normal; margin: 0; padding: 0; font-style: italic; line-height: 30px; font-size: 30px;font-family: Georgia, serif; }
+	.content p {color:#767676; font-weight: normal; margin: 0; padding: 0; line-height: 20px; font-size: 12px;font-family: Georgia, serif;}
+	.content a {color: #d18648; text-decoration: none;}
+	.footer p {padding: 0; font-size: 11px; color:#fff; margin: 0; font-family: Georgia, serif;}
+	.footer a {color: #f7a766; text-decoration: none;}
+	</style>
+  </head>
+  <body style="margin: 0; padding: 0; background: #bccdd9;">
+  	<table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+		  <tr>
+		  	<td align="center" style="margin: 0; padding: 0; background:#bccdd9 url('images/bg_email.png');padding: 35px 0">
+			    <table cellpadding="0" cellspacing="0" border="0" align="center" width="650" style="font-family: Georgia, serif;" class="header">
+			      <tr>
+			        <td bgcolor="#698291" height="115" align="center">
+						<h1 style="color: #fff !important; font: normal 33px Georgia, serif; margin: 0; padding: 0; line-height: 33px;"><singleline label="Title">Enter Title Here</singleline></h1>
+						<multiline label="Description"><p>TAGLINE GOES HERE</p></multiline>
+			        </td>
+			      </tr>
+				  <tr>
+					  <td style="font-size: 1px; height: 5px; line-height: 1px;" height="5">&nbsp;</td>
+				  </tr>	
+				</table><!-- header-->
+				<table cellpadding="0" cellspacing="0" border="0" align="center" width="650" style="font-family: Georgia, serif; background: #fff;" bgcolor="#ffffff">
+			      <tr>
+			        <td width="14" style="font-size: 0px;" bgcolor="#ffffff">&nbsp;</td>
+					<td width="186" valign="top" align="left" bgcolor="#ffffff" style="font-family: Georgia, serif; background: #fff; padding: 0 0 25px" class="sidebar">
+						<table cellpadding="0" cellspacing="0" border="0" style="color: #717171; font: normal 11px Georgia, serif; margin: 0; padding: 0; background: #fff;" width="186" bgcolor="#ffffff">
+						<tr>
+							<td style="padding: 25px 0 5px; border-bottom: 2px solid #d2b49b;" valign="top" align="center">
+								<h3 style="color:#767676; font-weight: normal; margin: 0; padding: 0; font-style: italic; line-height: 13px; font-size: 13px;font-family: Georgia, serif;">~ In this issue ~</h3>
+							</td>
+						</tr>
+						<tr>
+							<td style="padding: 15px 0 0;">			
+								<ul style="color: #4c6777; margin: 0 0 0 10px; padding: 0 0 0 5px; font-size: 12px;font-family: Georgia, serif;">
+									<tableofcontents>
+									<li style="padding: 0 0 5px; margin: 0;"><repeatertitle /></li>
+									</tableofcontents>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td style="padding: 20px 0 5px; border-bottom: 2px solid #d2b49b;" valign="top" align="center">
+								<h3 style="color:#767676; font-weight: normal; margin: 0; padding: 0; font-style: italic; line-height: 13px; font-size: 13px; font-family: Georgia, serif; ">~ In other news ~</h3>
+							</td>
+						</tr>
+						<repeater>
+						<tr>
+							<td style="padding: 15px 0 0; font-family: Georgia, serif; ">			
+								<h4 style="color:#4c6777 !important; font-size: 11px;line-height: 16px;font-family: Georgia, serif; margin: 0; padding: 0;"><singleline label="Title">Enter Title Here</singleline></h4>
+								<multiline label="Description"><p>Enter description here.</p></multiline>
+							</td>
+						</tr>	
+						</repeater>				
+						<tr>
+							<td style="padding: 25px 0 5px; border-bottom: 2px solid #d2b49b;font-family: Georgia, serif; " valign="top" align="center">
+								<h3 style="color:#767676; font-weight: normal; margin: 0; padding: 0; font-style: italic; line-height: 13px; font-size: 13px;">~ Forward to a friend ~</h3>
+							</td>
+						</tr>
+						<tr>
+							<td style="padding: 15px 0 0;font-family: Georgia, serif; " valign="top">			
+								<p style="line-height: 16px; font-family: Georgia, serif; ">Know someone who might be interested in the email? Why not <a href="{{ url:forward }}" style="color: #d18648; text-decoration: none;">forward this email</a> to them.</p>
+							</td>
+						</tr>	
+						<tr>
+							<td style="padding: 25px 0 5px; border-bottom: 2px solid #d2b49b;font-family: Georgia, serif; " valign="top" align="center">
+								<h3 style="color:#767676; font-weight: normal; margin: 0; padding: 0; font-style: italic; line-height: 13px; font-size: 13px;">~ Unsubscribe ~</h3>
+							</td>
+						</tr>
+						<tr>
+							<td style="padding: 15px 0 0;font-family: Georgia, serif; " valign="top">			
+								<p style="line-height: 16px;font-family: Georgia, serif; ">Don’t want to receive these emails anymore? You can <a href="{{ url:unsubscribe }}" style="color: #d18648; text-decoration: none;">unsubscribe</a> instantly.</p>
+							</td>
+						</tr>
+						</table>
+					</td>
+					<td width="24" bgcolor="#ffffff" style="font-size: 0px; font-family: Georgia, serif; background: #fff;">&nbsp;</td>
+					<td width="410" valign="top" align="left" bgcolor="#ffffff" style="font-family: Georgia, serif; background: #fff;" class="content">
+						<table cellpadding="0" cellspacing="0" border="0" style="color: #717171; font: normal 11px Georgia, serif; margin: 0; padding: 0;" width="410">
+						<tr>
+							<td style="padding: 25px 0 5px; border-bottom: 2px solid #d2b49b;font-family: Georgia, serif; " valign="top" align="center">
+								<h3 style="color:#767676; font-weight: normal; margin: 0; padding: 0; font-style: italic; line-height: 13px; font-size: 13px;">~ {{ helper:date format="F" }} <currentday />, {{ helper:date format="Y" }} ~</h3>
+							</td>
+						</tr>
+						<repeater>
+						<tr>
+							<td valign="top" style="padding: 0; margin: 0">
+								<table cellpadding="0" cellspacing="0" border="0" style="color: #717171; font: normal 11px Georgia, serif; margin: 0; padding: 0;" width="410">	
+								<tr>
+									<td style="padding: 25px 0 0;" align="left">			
+										<h2 style="color:#8598a3 !important; font-weight: normal; margin: 0; padding: 0; font-style: italic; line-height: 30px; font-size: 30px;font-family: Georgia, serif; "><singleline label="Title" repeatertitle="true">Enter Title Here</singleline></h2>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding: 15px 0 15px; border-bottom: 1px solid #d2b49b;" valign="top"> 										
+										<img width="410" style="padding-bottom: 15px" editable="true" label="Image" />
+										<p><multiline label="Description">Enter your description here.</multiline></p>
+									</td>
+								</tr>
+								</table>
+							</td>
+						</tr>		
+						</repeater>		
+						</table>
+						<br /><br />	
+					</td>
+					<td width="16" bgcolor="#ffffff" style="font-size: 0px; font-family: Georgia, serif; background: #fff;">&nbsp;</td>
+			      </tr>
+				</table><!-- body -->
+				<table cellpadding="0" cellspacing="0" border="0" align="center" width="650" style="font-family: Georgia, serif; line-height: 10px;" bgcolor="#698291" class="footer">
+			      <tr>
+			        <td bgcolor="#698291" align="center" style="padding: 15px 0 10px; font-size: 11px; color:#fff; margin: 0; line-height: 1.2;font-family: Georgia, serif;" valign="top">
+						<p style="padding: 0; font-size: 11px; color:#fff; margin: 0; font-family: Georgia, serif;"> <singleline label="Title">You</singleline></p>
+						<p style="padding: 0; font-size: 11px; color:#fff; margin: 0 0 8px 0; font-family: Georgia, serif;">Having trouble reading this? <a href="{{ url:webversion }}" style="color: #f7a766; text-decoration: none;">View it in your browser</a>. Not interested anymore? <a href="{{ url:unsubscribe }}" style="color: #f7a766; text-decoration: none;">Unsubscribe</a> instantly.</p>
+					</td>
+			      </tr>
+				</table><!-- footer-->
+		  	</td>
+		</tr>
+    </table>
+  </body>
+</html>
