@@ -10,6 +10,6 @@ class Email_Template_Paulmitchell extends Theme {
 	public $website				= 'http://www.paulmitchell.ch';
 	public $description			= 'Newsletter template for Paul Mitchell Schweiz';
 
-	public $category			= 'my-templates';
+	public $category			= 'premium';
 
 }/* End of file template.php */
