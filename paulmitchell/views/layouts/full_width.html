@@ -75,23 +75,59 @@
 				</tr>
 			</table>
 			<repeater>
-			<table border="0" cellpadding="20" cellspacing="0" width="100%" class="content">
-				<tr>
-					<td align="center" valign="top" style="border-collapse: collapse;padding-top:14px;">
-						<multiline label="Bild zum Inhaltsblock" editortype="image">
-							<img src="http://www.paulmitchell.ch/newsletters/placeholder/200/160" width="200" />
-						</multiline>
-					</td>
-					<td valign="top" style="border-collapse: collapse;padding-top:14px;">
-						<h3 style="color: #202020;display: block;font-family: Arial;font-size: 16px;font-weight: bold;line-height: 100%;margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;text-align: left;">
-							<singleline label="Inhaltsblock Titel">Titel zum Inhaltsblock</singleline>
-						</h3>
-						<multiline label="Inhaltsblock">
-							<p>Das ist ein Inhaltsblock. Jeder Inhaltsblock hat links ein Bild, das 200 Pixel breit ist, sowie einen Titel. Es können beliebig viele Inhaltsblöcke hinzugefügt werden.</p>
-						</multiline>
-					</td>
-				</tr>
-			</table>
+				<layout label="200px Bild links, Text rechts">
+					<table border="0" cellpadding="20" cellspacing="0" width="100%" class="content">
+						<tr>
+							<td width="200px" align="center" valign="top" style="border-collapse: collapse;padding-top:14px;">
+								<multiline label="Bild zum Inhaltsblock" editortype="image">
+									<img src="http://www.paulmitchell.ch/newsletters/placeholder/200/160" width="200" />
+								</multiline>
+							</td>
+							<td valign="top" style="border-collapse: collapse;padding-top:14px;">
+								<h3 style="color: #202020;display: block;font-family: Arial;font-size: 16px;font-weight: bold;line-height: 100%;margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;text-align: left;">
+									<singleline label="Inhaltsblock Titel">Titel zum Inhaltsblock</singleline>
+								</h3>
+								<multiline label="Inhaltsblock">
+									<p>Das ist ein Inhaltsblock. Jeder Inhaltsblock hat links ein Bild, das 200 Pixel breit ist, sowie einen Titel. Es können beliebig viele Inhaltsblöcke hinzugefügt werden.</p>
+								</multiline>
+							</td>
+						</tr>
+					</table>
+				</layout>
+				<layout label="Text links, 200px Bild rechts">
+					<table border="0" cellpadding="20" cellspacing="0" width="100%" class="content">
+						<tr>
+							<td valign="top" style="border-collapse: collapse;padding-top:14px;">
+								<h3 style="color: #202020;display: block;font-family: Arial;font-size: 16px;font-weight: bold;line-height: 100%;margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;text-align: left;">
+									<singleline label="Inhaltsblock Titel">Titel zum Inhaltsblock</singleline>
+								</h3>
+								<multiline label="Inhaltsblock">
+									<p>Das ist ein Inhaltsblock. Jeder Inhaltsblock hat links ein Bild, das 200 Pixel breit ist, sowie einen Titel. Es können beliebig viele Inhaltsblöcke hinzugefügt werden.</p>
+								</multiline>
+							</td>
+							<td width="200px" align="center" valign="top" style="border-collapse: collapse;padding-top:14px;">
+								<multiline label="Bild zum Inhaltsblock" editortype="image">
+									<img src="http://www.paulmitchell.ch/newsletters/placeholder/200/160" width="200" />
+								</multiline>
+							</td>
+						</tr>
+					</table>
+				</layout>
+				<layout label="Inhaltsblock volle Breite">
+					<table border="0" cellpadding="20" cellspacing="0" width="100%" class="content">
+						<tr>
+							<td valign="top" style="border-collapse: collapse;padding-top:14px;">
+								<h3 style="color: #202020;display: block;font-family: Arial;font-size: 16px;font-weight: bold;line-height: 100%;margin-top: 0;margin-right: 0;margin-bottom: 10px;margin-left: 0;text-align: left;">
+									<singleline label="Inhaltsblock Titel">Titel zum Inhaltsblock</singleline>
+								</h3>
+								<multiline label="Inhaltsblock">
+									<p>Das ist ein Inhaltsblock, der die volle Breite des Newsletters einnimmt. Es können beliebig viele Inhaltsblöcke hinzugefügt werden.<br />
+									<strong>Maximale Breite für Bilder ist 550px.</strong></p>
+								</multiline>
+							</td>
+						</tr>
+					</table>
+				</layout>
 			</repeater>
 		</td>
 	</tr>
